@@ -11,7 +11,7 @@ css: custom.css
 
 Some Housekeeping Stuff
 ========================================================
-- **Sign-in** at 
+- **Sign-in** at http://bit.ly/s2020-10-r-L1
 - **Slides** at
 - **Files** at 
 - Pre-workshop poll
