@@ -16,8 +16,7 @@ If you are planning to bring your own laptop, please make sure that you have the
 - R Programming Environment: Workspace, Working Directory, Packages
 - R Objects: Vector, List, Data frame, and Function
 - R Packages: Installation and usage
-- R Graphics: Simple plotting methods
-- Basic statistical analysis using R: Linear Regression
+- R Graphics: Simple plotting methods + hands-on
 
 ## How to run the R script (R slides) file on your computer
 _Prerequisite: R and RStudio_
