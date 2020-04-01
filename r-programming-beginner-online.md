@@ -38,7 +38,7 @@ Getting Started with R and RStudio
 ========================================================
 A Quick Start Guide for R Beginners
 
-In this section, you will be guided to some very basic information about R and RStudio.
+In this section, you will be guided to learn some very basic information about R and RStudio.
 
 I will then check your R/RStudio environment to make sure that you can use R/RStudio afterwards.
 
