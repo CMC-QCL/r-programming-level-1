@@ -1,4 +1,4 @@
-R Programming for Beginners
+R Programming for Beginners (Online)
 ========================================================
 author: Jeho Park
 date: April 1, 2020
@@ -12,16 +12,15 @@ css: custom.css
 Some Housekeeping Stuff
 ========================================================
 - **Sign-in** at http://bit.ly/s2020-10-r-L1
-- **Slides** at
-- **Files** at 
-- Pre-workshop poll
+- **Files** at https://cmc-qcl.github.io/r-programming-beginner-online/
+- **Interactive poll**: http://pollev.com/jehopark360
 
 This workshop is...
 ========================================================
-* This R Workshop for Beginner is
-  - designed to help you start R programming.
-  - designed to help you recall your memory of R programming.
-  - for those who already have a basic knowledge of Statistics.
+* This R Workshop for Beginners is designed:
+  - To help you start using R.
+  - To help you recall your memory of R programming.
+  - For those who already have some basic knowledge of Statistics.
 
 Agenda
 ========================================================
@@ -39,15 +38,12 @@ In this section, you will be guided to some very basic information about R and R
 
 I will then check your R/RStudio environment to make sure that you can use R/RStudio afterwards.
 
-Befor we go on, let's check your familiarity with R.
-
-
 
 What is R?
 ========================================================
 * R is a statical programming language/environment.
 * R is open source/free.
-* R is widely used/prefered.
+* R is widely used in academia and industry
 * R is cross-platform.
 * R is hard to learn.
 
@@ -72,7 +68,7 @@ What is RStudio?
 * Integrated Development Environment for R
 * Nice combination of GUI and CLI
 * Free and commercial version
-* 4 main windows, tabs, etc
+* 4 main panes and multiple tabs
 * Version control: Git and VPN
 * Debugging 
 * Documentation: R Markdown
@@ -83,7 +79,9 @@ What is RStudio?
 Check Point 1: Environment Check
 ========================================================
 * R
-* RStudio
+* RStudio 
+
+RStudio Cloud at https://rstudio.cloud
 
 What Can We Do with RStudio?
 ========================================================
