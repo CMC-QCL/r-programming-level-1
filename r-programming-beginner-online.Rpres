@@ -24,10 +24,15 @@ This workshop is...
 
 Agenda
 ========================================================
+## Session 1 (Basics)
 * Getting Started with R and RStudio
-* Examples 
-* Using R for statistical analysis: Linear regression
-* R packages for data science
+* General and basic information you need to know
+* R computing environment setup
+
+## Session 2 (Working with Data)
+* Data import
+* Basic plots
+* Packages for data wrangling and visualization
 * Hands-on exercise
 
 Getting Started with R and RStudio
@@ -85,7 +90,7 @@ RStudio Cloud at https://rstudio.cloud
 
 What Can We Do with RStudio?
 ========================================================
-## RStudio Introduction
+## RStudio Introduction (Let's check out different features RStudio offers)
 <img src="./r-programming-beginner-figure/rstudio_image.png" width="1000">
 
 Look Ma, R can do Math! 
@@ -182,126 +187,152 @@ print(c(a,A))
 print(a,A)
 ```
 
-Basic R Objects: Vectors
+R Packages
 ========================================================
-Vectors are array objects of the __same type__ data elements.
+- R is known for its community and its huge collection of user-generated packages
+- Packages are collections of R functions, data, and compiled code in a well-defined format. The directory where packages are stored is called the library.
+- We will install the dplyr package, a popular package for data manipulation
 
-```{r, eval=FALSE}
-class(a)
-```{r, eval=FALSE}
-class(A)
-```{r, eval=FALSE}
-B <- c(a,A) # concatenation
-```{r, eval=FALSE}
-print(B)
-```{r, eval=FALSE}
-class(B) # why?
+```{r eval=FALSE}
+install.packages('dplyr') # you can also use RStudio's Packages tab
+
+# You should load dplyr package first to use any functions and datasets in the package
+library('dplyr') 
 ```
 
-Basic R Objects: Vectors (cont.)
+End of Session 1 (break check area)
 ========================================================
-R has five basic or “atomic” classes of objects: 
-* character
-* numeric (real numbers) 
-* integer
-* complex
-* logical (True/False)
+## We looked at general and basic features 
+## Check if you can:
 
-A vector contains a set of data in any one of the atomic classes.
+* Run RStudio on your computer or log in to RStudio Cloud
+* Create a new project in RStudio 
+* Create variables and check from the "Environment" pane
+* Run R commands on console and directly from the editor window.
+* Install new packages and load required packages
 
-Basic R Objects: Lists
+
+Session 2: Working with Data
 ========================================================
-List are objects that can store __different types__ of vectors. 
-```{r, eval=FALSE}
-aList <- list(name=c("Joseph"), married=T, kids=2)
-aList
-aList$kids <- aList$kids+1
-aList$kids
-aList2 <- list(numeric_data=a,character_data=A)
-aList2
-allList <- list(aList, aList2)
-allList
-```
+* Built-in datasets and data import
+* Data exploration and data visualization
+* Hands-on exercise
 
-Basic R Objects: Data frames
+Built-in Datasets 
 ========================================================
-### Data frames are used for storing data tables. 
-### It is a __list of vectors of equal length__. 
-```{r, eval=FALSE}
-n <- c(2, 3, 5) # a vector 
-s <- c("aa", "bb", "cc") # a vector
-b <- c(TRUE, FALSE, TRUE) # a vector
-df <- data.frame(n, s, b) # a data frame
-df
-mtcars # a built-in (attached) data frame
-mtcars$mpg
+- R's datasets package has some built in datasets that we will be using.
+```{r eval=F}
+data() # this will bring up a document, R data sets
 ```
 
-Basic R Objects: Data frames (cont.)
+- Let's look at CO2 datasets. The CO2 data frame has 84 rows and 5 columns of data from an experiment on the cold tolerance of the grass species Echinochloa crus-galli.
+```{r eval=F}
+help(CO2) # see what the dataset is about
+CO2 # display all the contents of the data frame, CO2
+```
+
+#### Notice there's no CO2 dataframe in the Environment pane
+
+Data Import
 ========================================================
-### Data frames are used for storing data tables. 
-### It is a __list of vectors of equal length__. 
-```{r, eval=FALSE}
-df1 <- data.frame(y1=rnorm(100),y2=rnorm(100), y3=rnorm(100))
-head(df1) # display first few lines of data
-names(df1) # display column names
-summary(df1) # output depends on the data types
-plot(df1)
-```
-```{r, eval=FALSE}
-df2 <- read.table("https://s3.amazonaws.com/assets.datacamp.com/blog_assets/test.txt", 
-                 header = FALSE)
-df2
-```
+## Data file import is very easy with RStudio
 
-Subsseting
-=========================
-There are three operators used to extract subsets of R objects.
-* [ always returns an object of the same class as the original; can be used to select more than one element.
-* [[ is used to extract elements of a list or a data frame; it can only be used to extract a single element.
-* $ is used to extract elements of a list or data frame by name.
+Follow the instructor and import "auto.csv" file!
 
-[Q] What happens when [ is applied to a list?
+Click-click-click-done!
 
-Subsetting (cont.)
-==========================
-```{r, eval=FALSE}
-x <- c("a", "b", "c", "c", "d", "a")
-x[1]
-x[1:4]
-x[x > "a"] 
-u <- x > "a" # what's u here?
-u
-x[u] # subsetting using a boolean vector
-y <- list(foo=x, bar=x[u])
-y
-y[[1]]
-y[1]
-y$bar
-```
-R Objects: Factor
+Check if you have auto in your Environment.
+
+Data Exploration - Head or Tail?
 ========================================================
-* Factors are a special compoud object used to represent __categorical data__ such as gender, social class, etc.
-* Factors have 'levels' attribute. They may be nominal or ordered.
-```{r, eval=FALSE}
-v <- c("a","b","c","c","b")
-x <- factor(v) # turn the character vector into a factor object
-z <- factor(v, ordered = TRUE) # ordered factor
-x
-z
-table(x)
+```{r eval=FALSE}
+# The head function shows the first few entries in a dataframe.
+head(CO2)
+tail(CO2)
 ```
 
-R Objects: Functions
-=============================
-```{r, eval=FALSE}
-fun <- function(a,b) {
-  a*b
-}
-
-fun   
-fun(2,3) # a function call
+Data Exploration - Summary
+========================================================
+```{r}
+# The summary function shows summary statistics.
+summary(CO2)
 ```
+
+Data Visualization
+========================================================
+- Basic plots such as histogram, box plot, and scatter plot are within a few key strokes away (type `boxp` and wait for it)
+
+```{r eval=F}
+hist(auto$weight) # Use help function for more plotting options
+boxplot(auto$mpg ~ auto$cylinders)
+plot(auto$mpg, auto$horsepower)
+```
+**Note that we used '$' to extract a variable (column/feature/etc) of a dataframe
+
+Data Visualization - Boxplot
+========================================================
+```{r eval=F}
+boxplot(auto$mpg ~ auto$cylinders, data = auto, xlab = "Number of Cylinders", ylab = "Miles Per Gallon", main = "Mileage Data")
+```
+
+Data Visualization - Scatterplot
+========================================================
+```{r eval=F}
+plot(auto$horsepower, auto$mpg, xlab = "Horsepower", ylab = "Miles Per Gallon", main = " MPG vs. Horsepower")
+```
+
+Data Wrangling: a simple example
+========================================================
+# Let's look at simple data wrangling case
+* First show the first few observations in iris dataset
+* Find the mean sepal length of setosa (using __aggregate__ function)
+
+
+Data Wrangling: a simple example (cont.)
+========================================================
+
+```{r eval=F}
+# show the first few observations in iris dataset
+head(iris)
+# Show mean sepal length for different species
+aggregate(mydata$Sepal.Length,by=list(mydata$Species),FUN=mean)
+```
+
+
+Hands-On!
+========================================================
+Create a barplot showing daily changes in the COVID-19 cases in the US
+
+(1) Data can be found from The NY Times: Coronavirus in the US
+
+https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html
+
+(2) Download a Zip file from the GitHub site
+
+(3) Unzip the Zip file in your R workshop project folder
+
+(4) Import us-counties.csv in your R Environment
+
+(5) Use aggregate function to sum "cases" by "date"
+
+(6) Use barplot to plot the counts by day
+
+You have *15 minutes* to finish this task!
+
+
+End of Session 2
+========================================================
+# Make sure you can 
+* Use built-in datasets
+* Summarise datasets (exp. Dataframe)
+* Import CSV files
+* Plot histogram, boxplot, scatterplot, and barplot
+* Aggregate a variable in a dataframe (or tiblet) by another variable
+
+
+Further Study
+========================================================
+# Linear Regression
 
 
 Linear Regression
