@@ -30,9 +30,8 @@ Agenda
 * R computing environment setup
 
 ## Session 2 (Working with Data)
-* Data import
-* Basic plots
-* Packages for data wrangling and visualization
+* Built-in datasets and data import
+* Data exploration and data visualization
 * Hands-on exercise
 
 Getting Started with R and RStudio
