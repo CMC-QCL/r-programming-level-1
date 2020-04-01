@@ -1,4 +1,3 @@
-# R Programming for Beginners (Online)
 #### QCL Literacy: L1-Coding
 
 Instructor: Dr. Jeho Park, Director of the Quantitative and Computing Lab at Claremont McKenna College
