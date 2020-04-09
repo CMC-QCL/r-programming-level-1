@@ -217,11 +217,19 @@ Check if you have *auto* in your Environment.
 Data Import (Other Cases)
 =======================================================
 
-### What if your data is on the Internet (e.g., GitHub)?
+### What if your data is somewhere on the Internet (e.g., GitHub)?
 
-The same auto.csv file is available on the workshop GitHub repository:
+Open https://github.com/CMC-QCL/r-programming-beginner-online from your browser
 
+Click on Births2015.csv file
 
+**Caution: Do not use the file URL directly from the file view page or file link**
+
+Click on **Raw** and copy the address and paste it into your Notebook
+
+Now use either  
+(1) download.file([source_url], [destination_file_name]) if you want to save a local copy, or. 
+(2) read.csv([source_url]) if you want to import it directly to your environment.
 
 
 Hands-On: Data Exploration - Head or Tail?
@@ -240,56 +248,8 @@ Data Exploration - Summary
 
 ```r
 # The summary function shows summary statistics.
-require(readr)
-auto <- read_csv("auto.csv")
-summary(auto)
-```
-
-```
-       X1              mpg          cylinders      displacement  
- Min.   :  1.00   Min.   : 9.00   Min.   :3.000   Min.   : 68.0  
- 1st Qu.: 99.75   1st Qu.:17.00   1st Qu.:4.000   1st Qu.:105.0  
- Median :198.50   Median :22.75   Median :4.000   Median :151.0  
- Mean   :198.52   Mean   :23.45   Mean   :5.472   Mean   :194.4  
- 3rd Qu.:296.25   3rd Qu.:29.00   3rd Qu.:8.000   3rd Qu.:275.8  
- Max.   :397.00   Max.   :46.60   Max.   :8.000   Max.   :455.0  
-   horsepower        weight      acceleration        year      
- Min.   : 46.0   Min.   :1613   Min.   : 8.00   Min.   :70.00  
- 1st Qu.: 75.0   1st Qu.:2225   1st Qu.:13.78   1st Qu.:73.00  
- Median : 93.5   Median :2804   Median :15.50   Median :76.00  
- Mean   :104.5   Mean   :2978   Mean   :15.54   Mean   :75.98  
- 3rd Qu.:126.0   3rd Qu.:3615   3rd Qu.:17.02   3rd Qu.:79.00  
- Max.   :230.0   Max.   :5140   Max.   :24.80   Max.   :82.00  
-     origin          name          
- Min.   :1.000   Length:392        
- 1st Qu.:1.000   Class :character  
- Median :1.000   Mode  :character  
- Mean   :1.577                     
- 3rd Qu.:2.000                     
- Max.   :3.000                     
-```
-
-```r
 summary(CO2)
-```
-
-```
-     Plant             Type         Treatment       conc     
- Qn1    : 7   Quebec     :42   nonchilled:42   Min.   :  95  
- Qn2    : 7   Mississippi:42   chilled   :42   1st Qu.: 175  
- Qn3    : 7                                    Median : 350  
- Qc1    : 7                                    Mean   : 435  
- Qc3    : 7                                    3rd Qu.: 675  
- Qc2    : 7                                    Max.   :1000  
- (Other):42                                                  
-     uptake     
- Min.   : 7.70  
- 1st Qu.:17.90  
- Median :28.30  
- Mean   :27.21  
- 3rd Qu.:37.12  
- Max.   :45.50  
-                
+# summary(auto) # try this if you did Exercise 2 above
 ```
 
 Data Visualization
@@ -348,7 +308,7 @@ aggregate(iris$Sepal.Length,by=list(iris$Species),FUN=mean)
 ```
 
 
-Hands-On!
+Hands-On! COVID-19 Cases in the U.S.
 ========================================================
 Create a barplot showing daily changes in the COVID-19 cases in the US
 
@@ -358,18 +318,11 @@ https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html
 
 (2) Open the GitHub repository where they store more current datasets
 
-(3) Find the raw CSV file URL for U.S.State-Level Data (us-states.csv); copy the link address.
+(3) Find the **raw** CSV file URL for U.S.State-Level Data (us-states.csv); copy the link address.
 
-(4) Save the link address as url variable as follows:  
-url <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv"
+(4) Save the link address as fileurl variable.  
 
-(5) 
-
-read_
-
-
-
-(4) Import us-counties.csv in your R Environment
+(5) Import us-states.csv to your R Environment
 
 (5) Use aggregate function to sum "cases" by "date"
 
@@ -377,15 +330,29 @@ read_
 
 You have *15 minutes* to finish this task!
 
+Hands-On! (Continue)
+========================================================
+Exercise 4:
+Create a barplot showing daily changes in the COVID-19 cases in the US
+
+
 
 End of Session 2
 ========================================================
 # Make sure you can 
 * Use built-in datasets
 * Summarise datasets (exp. Dataframe)
-* Import CSV files
+* Import CSV files from local folder as well as from remote location
 * Plot histogram, boxplot, scatterplot, and barplot
 * Aggregate a variable in a dataframe (or tiblet) by another variable
+
+To Be Eligible for a Credit
+========================================================
+(1) Participate in the workshop.  
+(2) Follow all the hands-on activities.  
+(3) Create an R Notebook containg exercises.  
+(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - 4/9/2020") as an attachment.
+
 
 
 Further Study

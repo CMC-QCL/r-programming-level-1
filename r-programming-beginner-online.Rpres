@@ -205,11 +205,19 @@ Check if you have *auto* in your Environment.
 Data Import (Other Cases)
 =======================================================
 
-### What if your data is on the Internet (e.g., GitHub)?
+### What if your data is somewhere on the Internet (e.g., GitHub)?
 
-The same auto.csv file is available on the workshop GitHub repository:
+Open https://github.com/CMC-QCL/r-programming-beginner-online from your browser
 
+Click on Births2015.csv file
 
+**Caution: Do not use the file URL directly from the file view page or file link**
+
+Click on **Raw** and copy the address and paste it into your Notebook
+
+Now use either  
+(1) download.file([source_url], [destination_file_name]) if you want to save a local copy, or. 
+(2) read.csv([source_url]) if you want to import it directly to your environment.
 
 
 Hands-On: Data Exploration - Head or Tail?
@@ -225,12 +233,10 @@ In this exercise, you will create a Code Chunk in the Notebook doing the followi
 
 Data Exploration - Summary
 ========================================================
-```{r}
+```{r, eval=FALSE}
 # The summary function shows summary statistics.
-require(readr)
-auto <- read_csv("auto.csv")
-summary(auto)
 summary(CO2)
+# summary(auto) # try this if you did Exercise 2 above
 ```
 
 Data Visualization
@@ -286,7 +292,7 @@ aggregate(iris$Sepal.Length,by=list(iris$Species),FUN=mean)
 ```
 
 
-Hands-On!
+Hands-On! COVID-19 Cases in the U.S.
 ========================================================
 Create a barplot showing daily changes in the COVID-19 cases in the US
 
@@ -296,18 +302,11 @@ https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html
 
 (2) Open the GitHub repository where they store more current datasets
 
-(3) Find the raw CSV file URL for U.S.State-Level Data (us-states.csv); copy the link address.
+(3) Find the **raw** CSV file URL for U.S.State-Level Data (us-states.csv); copy the link address.
 
-(4) Save the link address as url variable as follows:  
-url <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv"
+(4) Save the link address as fileurl variable.  
 
-(5) 
-
-read_
-
-
-
-(4) Import us-counties.csv in your R Environment
+(5) Import us-states.csv to your R Environment
 
 (5) Use aggregate function to sum "cases" by "date"
 
@@ -315,15 +314,29 @@ read_
 
 You have *15 minutes* to finish this task!
 
+Hands-On! (Continue)
+========================================================
+Exercise 4:
+Create a barplot showing daily changes in the COVID-19 cases in the US
+
+
 
 End of Session 2
 ========================================================
 # Make sure you can 
 * Use built-in datasets
 * Summarise datasets (exp. Dataframe)
-* Import CSV files
+* Import CSV files from local folder as well as from remote location
 * Plot histogram, boxplot, scatterplot, and barplot
 * Aggregate a variable in a dataframe (or tiblet) by another variable
+
+To Be Eligible for a Credit
+========================================================
+(1) Participate in the workshop.  
+(2) Follow all the hands-on activities.  
+(3) Create an R Notebook containg exercises.  
+(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - 4/9/2020") as an attachment.
+
 
 
 Further Study
