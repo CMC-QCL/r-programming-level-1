@@ -318,9 +318,9 @@ https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html
 
 (5) Import us-states.csv to your R Environment
 
-(5) Use aggregate function to sum "cases" by "date"
+(6) Use aggregate function to sum "cases" by "date"
 
-(6) Use barplot to plot the counts by day
+(7) Use barplot to plot the counts by day
 
 You have *15 minutes* to finish this task!
 
