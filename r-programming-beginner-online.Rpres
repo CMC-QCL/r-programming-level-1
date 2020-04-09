@@ -1,13 +1,13 @@
 R Programming for Beginners (Online)
 ========================================================
 author: Jeho Park
-date: April 1, 2020
+date: April 9, 2020
 transition: none
 autosize: true
 css: custom.css
 
 ## Murty Sunak Quantitative and Computing Lab
-### Online Workshop Series: Level 1 - Coding
+### Online Workshop Series: Level 1 - Coding + Data
 
 Some Housekeeping Stuff
 ========================================================
@@ -21,12 +21,11 @@ After you finish this workshop, you will be able to...
 
 Agenda
 ========================================================
-## Part I (R computing environment)
+## Part I: R Computing Environment
 * Getting Started with R and RStudio
-* General and basic information you need to know
 * R computing environment setup
 
-## Session 2 (Working with Data)
+## Part II: Working with Data
 * Built-in datasets and data import
 * Data exploration and data visualization
 * Hands-on exercise
@@ -38,31 +37,6 @@ A Quick Start Guide for R Beginners
 In this section, you will be guided to learn some very basic information about R and RStudio.
 
 I will then check your R/RStudio environment to make sure that you can use R/RStudio afterwards.
-
-
-What is R?
-========================================================
-* R is a statical programming language/environment.
-* R is open source/free.
-* R is widely used in academia and industry
-* R is cross-platform.
-* R is hard to learn.
-
-What is not R?
-========================================================
-* S: R's ancestor
-* S-Plus: Commercial; modern implementation of S
-* SAS: Commercial; widely used in the commercial analytics.  
-* SPSS: Commercial; easy to use; widely used in Social Science.
-* MATLAB: Commercial; can do some Stats. 
-* Python: Also can do some Stats; good in text data manipulation.
-
-How to Get Help
-========================================================
-* Stack Overflow: http://stackoverflow.com/questions/tagged/r
-* Cross-Validated: the statistics Q&A site http://stats.stackexchange.com/
-* Google!
-* Contact QCL: qcl@cmc.edu; we are located underneath the Cube!
 
 What is RStudio?
 ========================================================
@@ -79,15 +53,30 @@ What is RStudio?
 
 Check Point 1: Environment Check
 ========================================================
-* R
-* RStudio 
+For your R'ing, make sure that you have
+* R (https://www.r-project.org/) 
+* RStudio Desktop (https://rstudio.com/products/rstudio/download/)
 
-RStudio Cloud at https://rstudio.cloud
+For today's workshop, we will be using 
+* RStudio Cloud at https://rstudio.cloud
 
-What Can We Do with RStudio?
+Please log in to your RStudio Cloud account. RStudio Cloud offers the same RStudio Desktop interface and more such as project sharing.
+
+
+RStudio Project in RStudio Cloud
 ========================================================
-## RStudio Introduction (Let's check out different features RStudio offers)
-<img src="./r-programming-beginner-figure/rstudio_image.png" width="1000">
+* Each project has its own folder to contain all the files you create for the project.
+* History and Environment will be saved and be restored when you reopen the project.
+* Version control (Git/GitHub) can be effectively used.
+
+
+
+
+
+
+
+
+
 
 Look Ma, R can do Math! 
 ========================================================
