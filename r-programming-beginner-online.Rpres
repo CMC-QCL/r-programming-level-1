@@ -11,17 +11,17 @@ css: custom.css
 
 Some Housekeeping Stuff
 ========================================================
-- **Sign-in** at http://bit.ly/s2020-10-r-L1
+- **Sign-in** at 
 - **Files** at https://cmc-qcl.github.io/r-programming-beginner-online/
 - **Interactive poll**: http://pollev.com/jehopark360
 
 After you finish this workshop, you will be able to...
 ========================================================
-* 
+* TO B UPDATED
 
 Agenda
 ========================================================
-## Session 1 (Basics)
+## Part I (R computing environment)
 * Getting Started with R and RStudio
 * General and basic information you need to know
 * R computing environment setup
@@ -72,7 +72,7 @@ What is RStudio?
 * 4 main panes and multiple tabs
 * Version control: Git and VPN
 * Debugging 
-* Documentation: R Markdown
+* Documentation: R Markdown and Notebook
   - install.packages("rmarkdown")
   - http://rmarkdown.rstudio.com/
 * Presentation slides: R Presentation (this one!)
