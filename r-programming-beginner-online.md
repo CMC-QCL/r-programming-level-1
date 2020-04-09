@@ -1,35 +1,31 @@
 R Programming for Beginners (Online)
 ========================================================
 author: Jeho Park
-date: April 1, 2020
+date: April 9, 2020
 transition: none
 autosize: true
 css: custom.css
 
 ## Murty Sunak Quantitative and Computing Lab
-### Online Workshop Series: Level 1 - Coding
+### Online Workshop Series: Level 1 - Coding + Data
 
 Some Housekeeping Stuff
 ========================================================
-- **Sign-in** at http://bit.ly/s2020-10-r-L1
+- **Sign-in** at 
 - **Files** at https://cmc-qcl.github.io/r-programming-beginner-online/
 - **Interactive poll**: http://pollev.com/jehopark360
 
-This workshop is...
+After you finish this workshop, you will be able to...
 ========================================================
-* This R Workshop for Beginners is designed:
-  - To help you start using R.
-  - To help you recall your memory of R programming.
-  - For those who already have some basic knowledge of Statistics.
+* TO B UPDATED
 
 Agenda
 ========================================================
-## Session 1 (Basics)
+## Part I: R Computing Environment
 * Getting Started with R and RStudio
-* General and basic information you need to know
 * R computing environment setup
 
-## Session 2 (Working with Data)
+## Part II: Working with Data
 * Built-in datasets and data import
 * Data exploration and data visualization
 * Hands-on exercise
@@ -42,31 +38,6 @@ In this section, you will be guided to learn some very basic information about R
 
 I will then check your R/RStudio environment to make sure that you can use R/RStudio afterwards.
 
-
-What is R?
-========================================================
-* R is a statical programming language/environment.
-* R is open source/free.
-* R is widely used in academia and industry
-* R is cross-platform.
-* R is hard to learn.
-
-What is not R?
-========================================================
-* S: R's ancestor
-* S-Plus: Commercial; modern implementation of S
-* SAS: Commercial; widely used in the commercial analytics.  
-* SPSS: Commercial; easy to use; widely used in Social Science.
-* MATLAB: Commercial; can do some Stats. 
-* Python: Also can do some Stats; good in text data manipulation.
-
-How to Get Help
-========================================================
-* Stack Overflow: http://stackoverflow.com/questions/tagged/r
-* Cross-Validated: the statistics Q&A site http://stats.stackexchange.com/
-* Google!
-* Contact QCL: qcl@cmc.edu; we are located underneath the Cube!
-
 What is RStudio?
 ========================================================
 * Integrated Development Environment for R
@@ -75,48 +46,45 @@ What is RStudio?
 * 4 main panes and multiple tabs
 * Version control: Git and VPN
 * Debugging 
-* Documentation: R Markdown
+* Documentation: R Markdown and Notebook
   - install.packages("rmarkdown")
   - http://rmarkdown.rstudio.com/
 * Presentation slides: R Presentation (this one!)
 
 Check Point 1: Environment Check
 ========================================================
-* R
-* RStudio 
+For your R'ing, make sure that you have
+* R (https://www.r-project.org/) 
+* RStudio Desktop (https://rstudio.com/products/rstudio/download/)
 
-RStudio Cloud at https://rstudio.cloud
+For today's workshop, we will be using 
+* RStudio Cloud at https://rstudio.cloud
 
-What Can We Do with RStudio?
+Please log in to your RStudio Cloud account. RStudio Cloud offers the same RStudio Desktop interface and more such as project sharing.
+
+
+RStudio Project in RStudio Cloud
 ========================================================
-## RStudio Introduction (Let's check out different features RStudio offers)
-<img src="./r-programming-beginner-figure/rstudio_image.png" width="1000">
+* Each project has its own folder to contain all the files you create for the project.
+* History and Environment will be saved and be restored when you reopen the project.
+* Version control (Git/GitHub) can be effectively used.
 
-Look Ma, R can do Math! 
+For more information about Git/GitHub use for R, please see https://happygitwithr.com/rstudio-git-github.html.
+
+
+R's Arithmetic Operators
 ========================================================
 
 ```r
-1+1
-```
-
-
-```r
-2+runif(1,min=0,max=1)
-```
-
-
-```r
-3^2
-```
-
-
-```r
-3*3
-```
-
-
-```r
-sqrt(3*3) # square root function
+a <- 16 # assignment operator!
+b <- 3
+add <- a + b
+sub = a - b
+mult = a * b
+div = a / b
+int_div = a %/% b
+exponent = a ^ b
+modulus = a %% b
 ```
 
 
@@ -124,35 +92,38 @@ sqrt(3*3) # square root function
 # comments are preceded by hash sign sqrt(3*3)
 ```
 
-Even More Math! 
+Workspace
 ========================================================
-* R can take integrals and derivatives, for example:
 
-Numerical Integral of
-
-$\displaystyle\int_0^{\infty} \frac{1}{(x+1)\sqrt{x}}dx$ 
+R workspace stores objects like vectors, datasets and functions in memory (the available space for calculation is limited to the size of the RAM).
 
 
 ```r
-integrand <- function(x) {1/((x+1)*sqrt(x))} ## define the integrated function
+ls()
 ```
 
-```r
-integrate(integrand, lower=0, upper=Inf) ## integrate the function from 0 to infinity
-```
-
-```
-3.141593 with absolute error < 2.7e-05
-```
-
-
-Some R Vocabulary
+[Hands-On] Now it's your turn
 ========================================================
-* **packages** are add on features to R  include data, new functions and methods, and extended capabilities. Think of them as ``apps'' on your phone. We've already installed several!
-* **console** is the main window of R where you enter commands
-* **workspace** is the working memory of R where all objects are stored
-* **script** is where you store commands to be run in the terminal later, like syntax files in SPSS or .do files in Stata
-* **function** is a set of commands doing something to R object(s) by getting inputs, do work, and return outputs. 
+
+Let's create a R Notebook and put the hands-on exercise in the Notebook document.
+
+* Click on _File > New File > R Notebook_
+* Save it as _QCL-R-Workshop-[your_initial]_
+* And follow my instructions
+
+Exercise 1:
+
+Create a variable x containing pi times pi, and another variable y containing a square root of x. Show the values as an output.
+
+Homework
+========================================================
+After finishing all the workshop exercises (Part I and Part II) on the R Notebook you just created, submit the R Notebook file (QCL-R-Workshop-[your_initial].Rmd) via email to 
+
+qcl@cmc.edu
+
+Email Subject Line should be:  
+QCL R Workshop - [Your Name] - 4/9/2020 
+
 
 
 Some Gene-R-al Stuff
@@ -183,30 +154,6 @@ search() # show loaded packages
 ??histogram # search for package documents containing the word "histogram"
 ```
 
-Workspace of R
-========================================================
-
-R workspace stores objects like vectors, datasets and functions in memory (the available space for calculation is limited to the size of the RAM).
-
-
-```r
-a <- 5 # notice a in your Environment window
-```
-
-
-```r
-A <- "text" 
-```
-
-
-```r
-a
-A
-ls()
-print(c(a,A))
-print(a,A)
-```
-
 R Packages
 ========================================================
 - R is known for its community and its huge collection of user-generated packages
@@ -221,15 +168,16 @@ install.packages('dplyr') # you can also use RStudio's Packages tab
 library('dplyr') 
 ```
 
-End of Session 1 (break check area)
+End of Part I (break check area)
 ========================================================
 ## We looked at general and basic features 
 ## Check if you can:
 
 * Run RStudio on your computer or log in to RStudio Cloud
-* Create a new project in RStudio 
-* Create variables and check from the "Environment" pane
+* Use RStudio Project environment 
+* Create variables and check them from the "Environment" pane or ls()
 * Run R commands on console and directly from the editor window.
+* Create R Notebook and add Code Chunks
 * Install new packages and load required packages
 
 
@@ -264,22 +212,64 @@ Follow the instructor and import "auto.csv" file!
 
 Click-click-click-done!
 
-Check if you have auto in your Environment.
+Check if you have *auto* in your Environment.
 
-Data Exploration - Head or Tail?
+Data Import (Other Cases)
+=======================================================
+
+### What if your data is on the Internet (e.g., GitHub)?
+
+The same auto.csv file is available on the workshop GitHub repository:
+
+
+
+
+Hands-On: Data Exploration - Head or Tail?
 ========================================================
+When you have a large dataset, it's impossible and inconvenient to display the whole contents of the dataset on the screen. You will want to check the first few rows or the last few rows of the dataset. 
 
-```r
-# The head function shows the first few entries in a dataframe.
-head(CO2)
-tail(CO2)
-```
+Exercise 2:
+
+In this exercise, you will create a Code Chunk in the Notebook doing the following:
+(1) Import "auto.csv" as auto_data
+(2) Output the first 5 rows of auto_data using R's built-in function
+(3) Output the last 5 rows of auto_data using R's built-in function
 
 Data Exploration - Summary
 ========================================================
 
 ```r
 # The summary function shows summary statistics.
+require(readr)
+auto <- read_csv("auto.csv")
+summary(auto)
+```
+
+```
+       X1              mpg          cylinders      displacement  
+ Min.   :  1.00   Min.   : 9.00   Min.   :3.000   Min.   : 68.0  
+ 1st Qu.: 99.75   1st Qu.:17.00   1st Qu.:4.000   1st Qu.:105.0  
+ Median :198.50   Median :22.75   Median :4.000   Median :151.0  
+ Mean   :198.52   Mean   :23.45   Mean   :5.472   Mean   :194.4  
+ 3rd Qu.:296.25   3rd Qu.:29.00   3rd Qu.:8.000   3rd Qu.:275.8  
+ Max.   :397.00   Max.   :46.60   Max.   :8.000   Max.   :455.0  
+   horsepower        weight      acceleration        year      
+ Min.   : 46.0   Min.   :1613   Min.   : 8.00   Min.   :70.00  
+ 1st Qu.: 75.0   1st Qu.:2225   1st Qu.:13.78   1st Qu.:73.00  
+ Median : 93.5   Median :2804   Median :15.50   Median :76.00  
+ Mean   :104.5   Mean   :2978   Mean   :15.54   Mean   :75.98  
+ 3rd Qu.:126.0   3rd Qu.:3615   3rd Qu.:17.02   3rd Qu.:79.00  
+ Max.   :230.0   Max.   :5140   Max.   :24.80   Max.   :82.00  
+     origin          name          
+ Min.   :1.000   Length:392        
+ 1st Qu.:1.000   Class :character  
+ Median :1.000   Mode  :character  
+ Mean   :1.577                     
+ 3rd Qu.:2.000                     
+ Max.   :3.000                     
+```
+
+```r
 summary(CO2)
 ```
 
@@ -310,9 +300,18 @@ Data Visualization
 ```r
 hist(auto$weight) # Use help function for more plotting options
 boxplot(auto$mpg ~ auto$cylinders)
-plot(auto$mpg, auto$horsepower)
 ```
 **Note that we used '$' to extract a variable (column/feature/etc) of a dataframe
+
+
+Hands-On: Data Visualization - Scatter Plot
+========================================================
+Scatter plot is a very useful tool when you want to visualize a relationship between two variables. 
+
+Exercise 3:
+In this exercise, you want to create a scatter plot showing mpg on X axis and horsepower on Y-axis to see the relationship between the two variables.
+
+In addition, change X label to "Miles per Gallon" and Y label to "Horse Power" and add a title "Horse Power vs. MPG" 
 
 Data Visualization - Boxplot
 ========================================================
@@ -321,16 +320,17 @@ Data Visualization - Boxplot
 boxplot(auto$mpg ~ auto$cylinders, data = auto, xlab = "Number of Cylinders", ylab = "Miles Per Gallon", main = "Mileage Data")
 ```
 
-Data Visualization - Scatterplot
+Data Wrangling
 ========================================================
+Data wrangling, sometimes referred to as data munging, is the process of **transforming** and **mapping data** from one "raw" data form into another format with the intent of making it more appropriate and valuable for a variety of downstream purposes such as analytics. 
 
-```r
-plot(auto$horsepower, auto$mpg, xlab = "Horsepower", ylab = "Miles Per Gallon", main = " MPG vs. Horsepower")
-```
+This may include further **munging**, **data visualization**, **data aggregation**, **training a statistical model**, as well as many other potential uses. 
+
+[Wikipedia](https://en.wikipedia.org/wiki/Data_wrangling)
 
 Data Wrangling: a simple example
 ========================================================
-# Let's look at simple data wrangling case
+## Let's look at a simple data wrangling case
 * First show the first few observations in iris dataset
 * Find the mean sepal length of setosa (using __aggregate__ function)
 
@@ -341,10 +341,10 @@ Data Wrangling: a simple example (cont.)
 
 ```r
 # show the first few observations in iris dataset
-head(iris)
-mydata <- iris
+[YOU DO THIS]
+
 # Show mean sepal length for different species
-aggregate(mydata$Sepal.Length,by=list(mydata$Species),FUN=mean)
+aggregate(iris$Sepal.Length,by=list(iris$Species),FUN=mean)
 ```
 
 
@@ -356,9 +356,18 @@ Create a barplot showing daily changes in the COVID-19 cases in the US
 
 https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html
 
-(2) Download a Zip file from the GitHub site
+(2) Open the GitHub repository where they store more current datasets
 
-(3) Unzip the Zip file in your R workshop project folder
+(3) Find the raw CSV file URL for U.S.State-Level Data (us-states.csv); copy the link address.
+
+(4) Save the link address as url variable as follows:  
+url <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv"
+
+(5) 
+
+read_
+
+
 
 (4) Import us-counties.csv in your R Environment
 
