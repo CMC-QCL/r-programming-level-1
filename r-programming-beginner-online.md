@@ -15,6 +15,12 @@ Some Housekeeping Stuff
 - **Files** at https://bit.ly/r-workshop-beginner-online
 - **GitHub Repo** at https://github.com/CMC-QCL/r-programming-beginner-online.git 
 
+Homework submission: 
+========================================================
+Those of you attending this workshop as part of requirements for your research group, student employment, or fellowship position, you must attend the workshop fully, do all the hands-on exercises plus homework to be qualified. 
+
+If you have to leave in the middle of the workshop, please leave a note on the chat for the record.
+
 After you finish this workshop, you will be able to...
 ========================================================
 * Run RStudio on your computer or log in to RStudio Cloud
