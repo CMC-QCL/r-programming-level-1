@@ -15,12 +15,9 @@ Some Housekeeping Stuff
 - **Files** at https://cmc-qcl.github.io/r-programming-beginner-online/
 - **Interactive poll**: http://pollev.com/jehopark360
 
-This workshop is...
+After you finish this workshop, you will be able to...
 ========================================================
-* This R Workshop for Beginners is designed:
-  - To help you start using R.
-  - To help you recall your memory of R programming.
-  - For those who already have some basic knowledge of Statistics.
+* 
 
 Agenda
 ========================================================
@@ -284,22 +281,14 @@ summary(CO2)
 ```
 
 ```
-     Plant             Type         Treatment       conc     
- Qn1    : 7   Quebec     :42   nonchilled:42   Min.   :  95  
- Qn2    : 7   Mississippi:42   chilled   :42   1st Qu.: 175  
- Qn3    : 7                                    Median : 350  
- Qc1    : 7                                    Mean   : 435  
- Qc3    : 7                                    3rd Qu.: 675  
- Qc2    : 7                                    Max.   :1000  
- (Other):42                                                  
-     uptake     
- Min.   : 7.70  
- 1st Qu.:17.90  
- Median :28.30  
- Mean   :27.21  
- 3rd Qu.:37.12  
- Max.   :45.50  
-                
+     Plant             Type         Treatment       conc          uptake     
+ Qn1    : 7   Quebec     :42   nonchilled:42   Min.   :  95   Min.   : 7.70  
+ Qn2    : 7   Mississippi:42   chilled   :42   1st Qu.: 175   1st Qu.:17.90  
+ Qn3    : 7                                    Median : 350   Median :28.30  
+ Qc1    : 7                                    Mean   : 435   Mean   :27.21  
+ Qc3    : 7                                    3rd Qu.: 675   3rd Qu.:37.12  
+ Qc2    : 7                                    Max.   :1000   Max.   :45.50  
+ (Other):42                                                                  
 ```
 
 Data Visualization
