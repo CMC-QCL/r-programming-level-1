@@ -342,6 +342,7 @@ Data Wrangling: a simple example (cont.)
 ```r
 # show the first few observations in iris dataset
 head(iris)
+mydata <- iris
 # Show mean sepal length for different species
 aggregate(mydata$Sepal.Length,by=list(mydata$Species),FUN=mean)
 ```
