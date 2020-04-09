@@ -11,13 +11,23 @@ css: custom.css
 
 Some Housekeeping Stuff
 ========================================================
-- **Sign-in** at 
-- **Files** at https://cmc-qcl.github.io/r-programming-beginner-online/
-- **Interactive poll**: http://pollev.com/jehopark360
+- **Sign-in** at http://bit.ly/s2020-14-r-L1
+- **Files** at https://bit.ly/r-workshop-beginner-online
+- **GitHub Repo** at https://github.com/CMC-QCL/r-programming-beginner-online.git 
 
 After you finish this workshop, you will be able to...
 ========================================================
-* TO B UPDATED
+* Run RStudio on your computer or log in to RStudio Cloud
+* Use RStudio Project environment 
+* Create variables and check them from the "Environment" pane or ls()
+* Run R commands on console and directly from the editor window.
+* Create R Notebook and add Code Chunks
+* Install new packages and load required packages
+* Use built-in datasets
+* Summarise datasets (exp. Dataframe)
+* Import CSV files from local folder as well as from remote location
+* Plot histogram, boxplot, scatterplot, and barplot
+* Aggregate a variable in a dataframe (or tiblet) by another variable
 
 Agenda
 ========================================================
@@ -354,145 +364,17 @@ To Be Eligible for a Credit
 (4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - 4/9/2020") as an attachment.
 
 
-
-Further Study
-========================================================
-# Linear Regression
-
-
-Linear Regression
-========================================================
-> Linear regression is used to predict the value of an outcome variable Y based on one or more input predictor variables X. The aim is to establish a linear relationship (a mathematical formula) between the predictor variable(s) and the response variable, so that, we can use this formula to estimate the value of the response Y, when only the predictors (Xs) values are known.
-
-$$
-Y = \beta_0 + \beta_1 X + ε
-$$
-
-where $Y$ is the response, $X$ is the predictor, and $ε$ is a random error term.
-
-The linear model describes a straight line relationship between the response variable Y and predictor X.
-
-
-Linear Regression (cont.)
-========================================================
-__Data and Method__
-
-Consider a set of paired observations of speed and stopping distance of cars. Will there be a linear relation between stopping distance and speed of a car? Let's find out.
-
-We will use "cars" dataset which is already installed.
-
-Try ?cars
-
-First we will create a scatter plot from the cars data. Then we will try fitting the relation using the lm function (fitting linear models) in stats package.
-
-Linear Regression (cont.)
-========================================================
-__Graphical Analysis__ 
-
-Let's first visually check the relatioship between two variables, speed and dist.
-
-```r
-# [Q] what kind of plot shows realtionship between two variables?
-```
-
-Linear Regression (cont.)
-========================================================
-__Graphical Analysis__ 
-
-Let's first visually check the relatioship between two variables, speed and dist.
-
-```r
-plot(x=cars$speed, y=cars$dist) #simple scatterplot
-scatter.smooth(x=cars$speed, y=cars$dist, main="Dist ~ Speed")  # scatterplot with smooth curve
-```
-
-Linear Regression (cont.)
-========================================================
-__Linear Model__ 
-
-The R function for linear regression is lm (i.e., linear model). It takes two arguments: formula and data.
-
-The formula that specifies a simple linear regression model $dist = \beta_1 + \beta_1 speed + ε$ is simply
-
-**dist ∼ speed**
-
-
-```r
-lm(dist ~ speed, data=cars)
-```
-__The function lm displays only the estimated coefficients, but the object returned by lm contains much more information.__
-
-Linear Regression (cont.)
-========================================================
-__Fitting the model__ 
-
-Let's save the result:
-
-```r
-linearmodel <- lm(dist ~ speed, data=cars) #save the result
-intercept <- linearmodel$coefficients[[1]]
-slope <- linearmodel$coefficients[[2]]
-```
-
-Let's plot the line:
-
-```r
-plot(cars, main="dist = -17.579 + 3.932 speed", 
-     xlim=c(0, 25), ylim=c(-10,130)) # simple scatter plot
-abline(intercept, slope) # adding a line manually
-```
-
-Linear Regression (cont.)
-========================================================
-__Linear Regression Diagnostic__
-
-We want to know how good this model we just found is. 
-- Is it statistically significant? 
-- How good the model predict the value of response variable w.r.t a new value of the predictor variable. 
-- How can we check?
-
-
-```r
-# summary of the model statistics
-```
-
-
-Linear Regression (cont.)
-========================================================
-__Linear Regression Diagnostic__
-
-We want to know how good this model we just found is. 
-- Is it statistically significant? 
-- How good the model predict the value of response variable w.r.t a new value of the predictor variable. 
-- How can we check?
-
-
-```r
-summary(linearmodel) 
-```
-Look at p-Values and r-squared for now. 
-
-Linear Regression (cont.)
-========================================================
-__Linear Regression Diagnostic__
-
-> In Linear Regression, the Null Hypothesis is that the coefficients associated with the variables is equal to zero (no effect). With the p-Value < 0.05, we can reject the null hypothesis. 
-
-> R-squared value tells you that how good the model represent the actual population. It's called a goodness-of-fit measure for linear regression models. This statistic indicates the percentage of the variance in the dependent variable that the independent variables explain collectively.
-  
-Linear Regression (cont.)
-========================================================
-__The most common metrics to check the model's quality__ (http://r-statistics.co/Linear-Regression.html)
-![Common Metrics](r-programming-beginner-figure/Linear_Regression_With_R.png)
-
-
 Links and References
 ========================================================
 > Useful links:
 > 
-> - R tutorial sites: http://jaredknowles.com/r-bootcamp/ and http://adv-r.had.co.nz/
-> - R search site: http://rseek.org
-> - R Markdown cheat sheet: http://shiny.rstudio.com/articles/rm-cheatsheet.html
+> - R tutorial sites: there are many tutorial sites to learn R; just search R tutorial from Google
+> - R Markdown cheat sheet: http://shiny.rstudio.com/articles/rm-cheatsheet.html.
+> - Important Package for Data Science: tidyverse (https://www.tidyverse.org/) 
 
-**(Adapted from several publicly available resources such as 1) the R-Bootcamp by Jared Knowles: http://jaredknowles.com/r-bootcamp/, 2) Advanced R by Hadley Wickham: http://adv-r.had.co.nz</small>
-<small>(Slides are made with the R Presentations tool in RStudio)**
+----  
+> References: 
+> - The R-Bootcamp by Jared Knowles: http://jaredknowles.com/r-bootcamp/,
+> - Advanced R by Hadley Wickham: http://adv-r.had.co.nz**
+> - RStudio Cloud Primers: https://rstudio.cloud/learn/primers
+
