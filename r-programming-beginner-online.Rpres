@@ -87,7 +87,7 @@ modulus = a %% b
 ```
 
 ```{r}
-# comments are preceded by hash sign sqrt(3*3)
+# comments are preceded by hash sign
 ```
 
 Workspace
@@ -102,7 +102,7 @@ ls()
 [Hands-On] Now it's your turn
 ========================================================
 
-Let's create a R Notebook and put the hands-on exercise in the Notebook document.
+Let's create a R Notebook and start the hands-on exercise in the Notebook document.
 
 * Click on _File > New File > R Notebook_
 * Save it as _QCL-R-Workshop-[your_initial]_
