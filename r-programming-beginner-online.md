@@ -1,7 +1,7 @@
 R Programming for Beginners (Online)
 ========================================================
 author: Jeho Park
-date: April 9, 2020
+date: April 24, 2020
 transition: none
 autosize: true
 css: custom.css
@@ -11,15 +11,20 @@ css: custom.css
 
 Some Housekeeping Stuff
 ========================================================
-- **Sign-in** at http://bit.ly/s2020-14-r-L1
+- **Sign-in** at https://bit.ly/s2020-20-r-L1
 - **Files** at https://bit.ly/r-workshop-beginner-online
 - **GitHub Repo** at https://github.com/CMC-QCL/r-programming-beginner-online.git 
 
-Homework submission: 
+QCL Workshop Participation Requirements: 
 ========================================================
 Those of you attending this workshop as part of requirements for your research group, student employment, or fellowship position, you must attend the workshop fully, do all the hands-on exercises plus homework to be qualified. 
 
 If you have to leave in the middle of the workshop, please leave a note on the chat for the record.
+
+Recommendations for Engagement:  
+(1) Use your camera to show your attention  
+(2) Use gestures such as nodding, thumbs-up, and rasing hand to signal your understanding/misunderstanding  
+(3) Unmute yourself to ask questions anytime   
 
 After you finish this workshop, you will be able to...
 ========================================================
@@ -37,11 +42,11 @@ After you finish this workshop, you will be able to...
 
 Agenda
 ========================================================
-## Part I: R Computing Environment
+## Part I: R Computing Environment (30 - 40 min)
 * Getting Started with R and RStudio
 * R computing environment setup
 
-## Part II: Working with Data
+## Part II: Working with Data (60 - 70 min)
 * Built-in datasets and data import
 * Data exploration and data visualization
 * Hands-on exercise
