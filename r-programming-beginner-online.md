@@ -307,13 +307,18 @@ Data wrangling, sometimes referred to as data munging, is the process of **trans
 
 This may include further **munging**, **data visualization**, **data aggregation**, **training a statistical model**, as well as many other potential uses. 
 
-[Wikipedia](https://en.wikipedia.org/wiki/Data_wrangling)
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Data_wrangling)
+
+<img src="r-programming-beginner-figure/Data_Wrangling_with_R.png" title="Data Wrangling" alt="Data Wrangling" width="80%" style="display: block; margin: auto;" />
 
 Data Wrangling: a simple example
 ========================================================
 ## Let's look at a simple data wrangling case
+In this example, we use iris dataset (try ?iris from your console.)
+
 * First show the first few observations in iris dataset
-* Find the mean sepal length of setosa (using __aggregate__ function)
+* Now try `str(iris)` to see the structure of the dataset
+* Find the mean sepal length of setosa (using `aggregate` function)
 
 
 Data Wrangling: a simple example (cont.)
@@ -322,41 +327,56 @@ Data Wrangling: a simple example (cont.)
 
 ```r
 # show the first few observations in iris dataset
-[YOU DO THIS]
+head(iris)
+
+# check the structure of the iris dataset
+str(iris)
 
 # Show mean sepal length for different species
-aggregate(iris$Sepal.Length,by=list(iris$Species),FUN=mean)
+aggregate(Sepal.Length ~ Species, data = iris, FUN = mean)
 ```
+
+R Formula (A side note)
+========================================================
+At this stage, you might be wondering what the tilde (~) was for in the box plot and aggregate example as in:
+
+boxplot(**auto$mpg ~ auto$cylinders**)  
+aggregate(**Sepal.Length ~ Species**, data = iris, FUN = mean)
+
+For example, **y ~ x** is called *fomula* in R where the left-hand side of a tilde (~) is the "dependent variable" and the right-hand side is the "independent variables." In most cases, you read it as y is a function of x. In the aggregate case, you read it as "y is grouped according to x." The FUN argument tells how they are computed. In our example, the Sepal.Length values are averaged using the mean function. 
 
 
 Hands-On! COVID-19 Cases in the U.S.
 ========================================================
-Create a barplot showing daily changes in the COVID-19 cases in the US
+Create a barplot showing daily changes in the new COVID-19 cases in the US.
 
-(1) Data can be found from The NY Times: Coronavirus in the US
-
-https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html
-
-(2) Open the GitHub repository where they store more current datasets
-
-(3) Find the **raw** CSV file URL for U.S.State-Level Data (us-states.csv); copy the link address.
-
+(1) Data can be found from The NY Times: Coronavirus in the US   
+Here's the [report](https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html) and [data description](https://www.nytimes.com/article/coronavirus-county-data-us.html)  
+(2) Open the GitHub repository where they store the up-to-date datasets  
+(3) Find the **raw** CSV file URL for U.S.State-Level Data (us-states.csv); copy the link address.  
 (4) Save the link address as fileurl variable.  
-
-(5) Import us-states.csv to your R Environment
-
-(6) Use aggregate function to sum "cases" by "date"
-
-(7) Use barplot to plot the counts by day
+(5) Import us-states.csv to your R Environment   
+(6) Use aggregate function to sum "cases" by "date"  
+(7) Use diff function to calculate the difference between two consecutive days.  
+(8) Use barplot to plot the new cases by day 
 
 You have *15 minutes* to finish this task!
 
 Hands-On! (Continue)
 ========================================================
 Exercise 4:
-Create a barplot showing daily changes in the COVID-19 cases in the US
+Create a barplot showing daily changes in the new COVID-19 cases in the US.
 
 
+```r
+fileurl <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv"
+
+library(readr)
+us_states <- read_csv(fileurl) # you may directly put the URL
+data_covid <- aggregate(cases ~ date, data = us_states, sum)
+new_cases <- diff(data_covid$cases)
+barplot(new_cases)
+```
 
 End of Session 2
 ========================================================
