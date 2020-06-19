@@ -154,7 +154,7 @@ After finishing all the workshop exercises (Part I and Part II) on the R Noteboo
 qcl@cmc.edu
 
 Email Subject Line should be:  
-QCL R Workshop - [Your Name] - 4/23/2020 
+QCL R Workshop - [Your Name] - 6/19/2020 
 
 
 
