@@ -7,10 +7,14 @@ Instructor: Dr. Jeho Park, Director of the Quantitative and Computing Lab at Cla
 R is an open source statistical programming language. R is widely used in industry as well as in academia for statistical analysis and data visualization. In this workshop, we introduce the basics of R language and its programming environment through simple hands-on examples.
 
 ### Target Audience 
-This workshop is designed for beginners in R programming, so no prior knowledge of R programming is needed. General programming knowledge in any programming languages will help understand the programming concepts and hands-on part.   
+This workshop is designed for beginners in R programming--no prior knowledge of R programming is needed. General programming knowledge in any programming languages will help understand the programming concepts and hands-on part.   
 
-### Required Software
-If you are planning to bring your own laptop, please make sure that you have the latest R (https://cran.r-project.org/) and RStudio Desktop (https://www.rstudio.com/products/rstudio/download/; free version) installed on your computer.
+### Required Software/Account
+_RStudio Cloud_  
+We will use RStudio cloud for this workshop. Please make sure you have a (free) account from https://rstudio.cloud (beta).  
+
+_Desktop Application_  
+If you are planning to use desktop application, please make sure that you have the latest R (https://cran.r-project.org/) and RStudio Desktop (https://www.rstudio.com/products/rstudio/download/; free version) installed on your computer.
 
 ### Agenda
 - Basics of R and RStudio

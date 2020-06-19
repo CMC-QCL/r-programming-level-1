@@ -11,7 +11,7 @@ css: custom.css
 
 Some Housekeeping Stuff
 ========================================================
-- **Sign-in** at https://bit.ly/s2020-20-r-L1
+- **Sign-in** at https://bit.ly/su2020-r-L1-signin
 - **Files** at https://bit.ly/r-workshop-beginner-online
 - **GitHub Repo** at https://github.com/CMC-QCL/r-programming-beginner-online.git 
 
@@ -40,6 +40,17 @@ After you finish this workshop, you will be able to...
 * Plot histogram, boxplot, scatterplot, and barplot
 * Aggregate a variable in a dataframe (or tiblet) by another variable
 
+Hands-on/Assignment Result
+========================================================
+You will be asked to create a box plot showing new reported cases of COVID-19 by day in the United States.
+
+https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html
+
+<img src="./r-programming-beginner-online-figure/Coronavirus_in_the_U_S_The_New_York_Times.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="40%" />
+
+(Raw datasets available at https://github.com/nytimes/covid-19-data)
+
+
 Agenda
 ========================================================
 ## Part I: R Computing Environment (30 - 40 min)
@@ -57,7 +68,7 @@ A Quick Start Guide for R Beginners
 
 In this section, you will be guided to learn some very basic information about R and RStudio.
 
-I will then check your R/RStudio environment to make sure that you can use R/RStudio afterwards.
+I will then check your R/RStudio (Cloud) environment to make sure that you can use R/RStudio afterwards.
 
 What is RStudio?
 ========================================================
@@ -97,7 +108,7 @@ R's Arithmetic Operators
 ========================================================
 
 ```r
-a <- 16 # assignment operator!
+a <- 16 # assignment operator! Is it an arrow sign?
 b <- 3
 add <- a + b
 sub = a - b
