@@ -11,7 +11,7 @@ css: custom.css
 
 Some Housekeeping Stuff
 ========================================================
-- **Sign-in** at https://bit.ly/s2020-20-r-L1
+- **Sign-in** at https://bit.ly/su2020-r-L1-signin
 - **Files** at https://bit.ly/r-workshop-beginner-online
 - **GitHub Repo** at https://github.com/CMC-QCL/r-programming-beginner-online.git 
 
@@ -57,7 +57,7 @@ A Quick Start Guide for R Beginners
 
 In this section, you will be guided to learn some very basic information about R and RStudio.
 
-I will then check your R/RStudio environment to make sure that you can use R/RStudio afterwards.
+I will then check your R/RStudio (Cloud) environment to make sure that you can use R/RStudio afterwards.
 
 What is RStudio?
 ========================================================
