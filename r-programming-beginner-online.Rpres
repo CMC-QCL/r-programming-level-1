@@ -290,7 +290,7 @@ This may include further **munging**, **data visualization**, **data aggregation
 Source: [Wikipedia](https://en.wikipedia.org/wiki/Data_wrangling)
 
 ```{r, out.width='80%', fig.align='center', fig.cap='Data Wrangling', echo = FALSE}
-knitr::include_graphics('r-programming-beginner-figure/Data_Wrangling_with_R.png')
+knitr::include_graphics('./r-programming-beginner-online-figure/data-science-wrangle.png')
 ```
 
 Data Wrangling: a simple example
