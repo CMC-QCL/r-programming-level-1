@@ -236,24 +236,6 @@ Click-click-click-done!
 
 Check if you have *auto* in your Environment.
 
-Data Import (Other Cases)
-=======================================================
-
-### What if your data is somewhere on the Internet (e.g., GitHub)?
-
-Open https://github.com/CMC-QCL/r-programming-beginner-online from your browser
-
-Click on Births2015.csv file
-
-**Caution: Do not use the file URL directly from the file view page or file link**
-
-Click on **Raw** and copy the address and paste it into your Notebook
-
-Now use either  
-(1) download.file([source_url], [destination_file_name]) if you want to save a local copy, or. 
-(2) read.csv([source_url]) if you want to import it directly to your environment.
-
-
 Hands-On: Data Exploration - Head or Tail?
 ========================================================
 When you have a large dataset, it's impossible and inconvenient to display the whole contents of the dataset on the screen. You will want to check the first few rows or the last few rows of the dataset. 
