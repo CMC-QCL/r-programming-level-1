@@ -40,6 +40,14 @@ After you finish this workshop, you will be able to...
 * Plot histogram, boxplot, scatterplot, and barplot
 * Aggregate a variable in a dataframe (or tiblet) by another variable
 
+Hands-on/Assignment Outcome
+========================================================
+You will be asked to create a box plot showing new reported cases of COVID-19 by day in the United States.
+
+https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html
+
+
+
 Agenda
 ========================================================
 ## Part I: R Computing Environment (30 - 40 min)
@@ -97,7 +105,7 @@ R's Arithmetic Operators
 ========================================================
 
 ```r
-a <- 16 # assignment operator!
+a <- 16 # assignment operator! Is it an arrow sign?
 b <- 3
 add <- a + b
 sub = a - b
