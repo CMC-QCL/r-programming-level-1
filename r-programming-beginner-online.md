@@ -367,8 +367,8 @@ fileurl <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-st
 
 library(readr)
 us_states <- read_csv(fileurl) # you may directly put the URL
-data_covid <- aggregate(cases ~ date, data = us_states, sum)
-new_cases <- diff(data_covid$cases)
+data_covid <- aggregate(  _add the right code here_  )
+new_cases <- diff( _add the right code here_   )
 barplot(new_cases)
 ```
 
