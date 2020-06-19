@@ -46,6 +46,9 @@ You will be asked to create a box plot showing new reported cases of COVID-19 by
 
 https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html
 
+<img src="./r-programming-beginner-online-figure/Coronavirus_in_the_U_S_The_New_York_Times.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="40%" />
+
+(Raw datasets available at https://github.com/nytimes/covid-19-data)
 
 
 Agenda
