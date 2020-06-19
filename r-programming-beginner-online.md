@@ -40,7 +40,7 @@ After you finish this workshop, you will be able to...
 * Plot histogram, boxplot, scatterplot, and barplot
 * Aggregate a variable in a dataframe (or tiblet) by another variable
 
-Hands-on/Assignment Outcome
+Hands-on/Assignment Result
 ========================================================
 You will be asked to create a box plot showing new reported cases of COVID-19 by day in the United States.
 
