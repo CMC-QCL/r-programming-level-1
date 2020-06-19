@@ -10,11 +10,11 @@ R is an open source statistical programming language. R is widely used in indust
 This workshop is designed for beginners in R programming--no prior knowledge of R programming is needed. General programming knowledge in any programming languages will help understand the programming concepts and hands-on part.   
 
 ### Required Software/Account
-_RStudio Cloud_
-We recommend you to use RStudio cloud for this workshop. Please make sure you have a (free) account from https://rstudio.cloud (beta). 
+_RStudio Cloud_  
+We be using RStudio cloud for this workshop. Please make sure you have a (free) account from https://rstudio.cloud (beta). 
 
-_Desktop Application_
-If you are planning to bring your own laptop, please make sure that you have the latest R (https://cran.r-project.org/) and RStudio Desktop (https://www.rstudio.com/products/rstudio/download/; free version) installed on your computer.
+_Desktop Application_  
+If you are planning to use desktop application, please make sure that you have the latest R (https://cran.r-project.org/) and RStudio Desktop (https://www.rstudio.com/products/rstudio/download/; free version) installed on your computer.
 
 ### Agenda
 - Basics of R and RStudio
