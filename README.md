@@ -1,7 +1,7 @@
 ### Workshop Syllabus
 #### QCL Literacy: L1-Coding
 
-Instructor: Dr. Jeho Park, Director of the Quantitative and Computing Lab at Claremont McKenna College
+Instructor: Cindy, Grad Fellow of the Quantitative and Computing Lab at Claremont McKenna College
 
 ## Summary
 R is an open source statistical programming language. R is widely used in industry as well as in academia for statistical analysis and data visualization. In this workshop, we introduce the basics of R language and its programming environment through simple hands-on examples.
