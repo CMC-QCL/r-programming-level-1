@@ -1,7 +1,7 @@
 R Programming for Beginners (Online)
 ========================================================
 author: Jeho Park
-date: June 19, 2020
+date: September 9, 2020
 transition: none
 autosize: true
 css: custom.css
@@ -11,7 +11,6 @@ css: custom.css
 
 Some Housekeeping Stuff
 ========================================================
-- **Sign-in** at https://bit.ly/su2020-r-L1-signin
 - **Files** at https://bit.ly/r-workshop-beginner-online
 - **GitHub Repo** at https://github.com/CMC-QCL/r-programming-beginner-online.git 
 
