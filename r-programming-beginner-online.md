@@ -251,7 +251,7 @@ Data Exploration - Summary
 ```r
 # The summary function shows summary statistics.
 summary(CO2)
-# summary(auto_data) # try this if you did Exercise 2 above
+# summary(auto) # try this if you did Exercise 2 above
 ```
 
 Data Visualization
