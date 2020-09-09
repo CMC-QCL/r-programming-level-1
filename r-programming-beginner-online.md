@@ -37,18 +37,7 @@ After you finish this workshop, you will be able to...
 * Summarise datasets (exp. Dataframe)
 * Import CSV files from local folder as well as from remote location
 * Plot histogram, boxplot, scatterplot, and barplot
-* Aggregate a variable in a dataframe (or tiblet) by another variable
-
-Hands-on/Assignment Result
-========================================================
-You will be asked to create a box plot showing new reported cases of COVID-19 by day in the United States.
-
-https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html
-
-<img src="./r-programming-beginner-online-figure/Coronavirus_in_the_U_S_The_New_York_Times.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="40%" />
-
-(Raw datasets available at https://github.com/nytimes/covid-19-data)
-
+* Aggregate a variable in a dataframe (or tiblet) by another variable (when time permits)
 
 Agenda
 ========================================================
@@ -153,7 +142,7 @@ After finishing all the workshop exercises (Part I and Part II) on the R Noteboo
 qcl@cmc.edu
 
 Email Subject Line should be:  
-QCL R Workshop - [Your Name] - 6/19/2020 
+QCL R Workshop - [Your Name] - 9/9/2020 
 
 
 
@@ -339,7 +328,7 @@ aggregate(**Sepal.Length ~ Species**, data = iris, FUN = mean)
 For example, **y ~ x** is called *fomula* in R where the left-hand side of a tilde (~) is the "dependent variable" and the right-hand side is the "independent variables." In most cases, you read it as y is a function of x. In the aggregate case, you read it as "y is grouped according to x." The FUN argument tells how they are computed. In our example, the Sepal.Length values are averaged using the mean function. 
 
 
-Hands-On! COVID-19 Cases in the U.S.
+(Stretch) Hands-On! COVID-19 Cases in the U.S.
 ========================================================
 Create a barplot showing daily changes in the new COVID-19 cases in the US.
 
@@ -355,7 +344,7 @@ Here's the [report](https://www.nytimes.com/interactive/2020/us/coronavirus-us-c
 
 You have *15 minutes* to finish this task!
 
-Hands-On! (Continue)
+(Stretch) Hands-On! (Continue)
 ========================================================
 Exercise 4:
 Create a barplot showing daily changes in the new COVID-19 cases in the US.
@@ -380,12 +369,12 @@ End of Session 2
 * Plot histogram, boxplot, scatterplot, and barplot
 * Aggregate a variable in a dataframe (or tiblet) by another variable
 
-To Be Eligible for a Credit
+To Be Eligible for Participation
 ========================================================
 (1) Participate in the workshop.  
 (2) Follow all the hands-on activities.  
-(3) Create an R Notebook containg exercises.  
-(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - 4/9/2020") as an attachment.
+(3) Create an R Notebook containing hands-on exercises.  
+(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - 9/9/2020") as an attachment.
 
 
 Links and References
