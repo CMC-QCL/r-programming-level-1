@@ -353,7 +353,7 @@ End of Session 2
 * Summarise datasets (exp. Dataframe)
 * Import CSV files from local folder as well as from remote location
 * Plot histogram, boxplot, scatterplot, and barplot
-* Aggregate a variable in a dataframe (or tiblet) by another variable
+* (Aggregate a variable in a dataframe (or tiblet) by another variable)
 
 To Be Eligible for Participation
 ========================================================
