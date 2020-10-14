@@ -242,8 +242,8 @@ Exercise 2:
 
 In this exercise, you will create a Code Chunk in the Notebook doing the following:
 (1) Import "auto.csv" as auto_data
-(2) Output the first 5 rows of auto_data using R's built-in function
-(3) Output the last 5 rows of auto_data using R's built-in function
+(2) Output the first row of auto_data using R's built-in function
+(3) Output the last row of auto_data using R's built-in function
 
 Data Exploration - Summary
 ========================================================
