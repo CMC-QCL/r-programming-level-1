@@ -265,7 +265,7 @@ boxplot(auto$mpg ~ auto$cylinders)
 ```
 **Note that we used '$' to extract a variable (column/feature/etc) of a dataframe
 
-**Note that we used '~' for boxplot. This is a R formula. The left side of tilde is dependent variable. The right side of the tilde is independent variable (like y = x + 1). The right side of the formula is sometimes called predictor or feature.
+**Note that we used '~' for boxplot. This is a R formula. The left side of tilde is a dependent variable. The right side of the tilde is an independent variable(s) (like y = x + 1). The right side of the formula is sometimes called predictor or feature.
 
 Hands-On: Data Visualization - Scatter Plot
 ========================================================
