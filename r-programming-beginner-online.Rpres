@@ -1,7 +1,7 @@
 R Programming for Beginners (Online)
 ========================================================
 author: Jeho Park
-date: September 9, 2020
+date: October 14, 2020
 transition: none
 autosize: true
 css: custom.css
@@ -230,15 +230,15 @@ Exercise 2:
 
 In this exercise, you will create a Code Chunk in the Notebook doing the following:
 (1) Import "auto.csv" as auto_data
-(2) Output the first 5 rows of auto_data using R's built-in function
-(3) Output the last 5 rows of auto_data using R's built-in function
+(2) Output the first row of auto_data using R's built-in function
+(3) Output the last row of auto_data using R's built-in function
 
 Data Exploration - Summary
 ========================================================
 ```{r, eval=FALSE}
 # The summary function shows summary statistics.
 summary(CO2)
-# summary(auto_data) # try this if you did Exercise 2 above
+# summary(auto) # try this if you did Exercise 2 above
 ```
 
 Data Visualization
@@ -251,7 +251,7 @@ boxplot(auto$mpg ~ auto$cylinders)
 ```
 **Note that we used '$' to extract a variable (i.e., column) of a dataframe
 
-**Note that we used '~' for boxplot. This is a R formula. The left side of tilde is dependent variable. The right side of the tilde is independent variable (like y = x + 1). The right side of the formula is sometimes called predictor or feature.
+**Note that we used '~' for boxplot. This is a R formula. The left side of tilde is a dependent variable. The right side of the tilde is an independent variable(s) (like y = x + 1). The right side of the formula is sometimes called predictor or feature.
 
 Hands-On: Data Visualization - Scatter Plot
 ========================================================
@@ -353,7 +353,7 @@ End of Session 2
 * Summarise datasets (exp. Dataframe)
 * Import CSV files from local folder as well as from remote location
 * Plot histogram, boxplot, scatterplot, and barplot
-* Aggregate a variable in a dataframe (or tiblet) by another variable
+* (Aggregate a variable in a dataframe (or tiblet) by another variable)
 
 To Be Eligible for Participation
 ========================================================
