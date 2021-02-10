@@ -1,7 +1,7 @@
 R Programming for Beginners (Online)
 ========================================================
 author: Jeho Park
-date: February 10, 2020
+date: February 10, 2021
 transition: none
 autosize: true
 css: custom.css
@@ -80,10 +80,12 @@ For your R'ing, make sure that you have
 For today's workshop, we will be using 
 * CMC RStudio Server at https://webapps.cmc.edu/rstudio/
 
-Please log in to your RStudio Cloud account. RStudio Cloud offers the same RStudio Desktop interface and more such as project sharing.
+Please log in to your RStudio Server account. RStudio Server offers the same RStudio Desktop interface and more such as project sharing. 
+
+For non-CMC folks, we have provided generic training accounts (e.g., ruser1). These accounts will be available to you for 2 weeks after the workshop.
 
 
-RStudio Project in RStudio Cloud
+RStudio Project
 ========================================================
 * Each project has its own folder to contain all the files you create for the project.
 * History and Environment will be saved and be restored when you reopen the project.
@@ -94,6 +96,7 @@ For more information about Git/GitHub use for R, please see https://happygitwith
 
 R's Arithmetic Operators
 ========================================================
+That's right! R is a programming languge.
 
 ```r
 a <- 16 # assignment operator! Is it an arrow sign?
@@ -142,7 +145,7 @@ After finishing all the workshop exercises (Part I and Part II) on the R Noteboo
 qcl@cmc.edu
 
 Email Subject Line should be:  
-QCL R Workshop - [Your Name] - 9/9/2020 
+QCL R Workshop - [Your Name] - 2/10/2021 
 
 
 
