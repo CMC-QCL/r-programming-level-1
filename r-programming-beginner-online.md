@@ -140,7 +140,7 @@ Create a variable x containing pi times pi, and another variable y containing a 
 
 Homework
 ========================================================
-After finishing all the workshop exercises (Part I and Part II) on the R Notebook you just created, submit the R Notebook file (QCL-R-Workshop-[your_initial].Rmd) via email to 
+After finishing all the workshop exercises (Part I and Part II) on the R Markdown file you just created, submit the Rmd file (QCL-R-Workshop-[your_initial].Rmd) via email to 
 
 qcl@cmc.edu
 
@@ -196,7 +196,7 @@ End of Part I (break check area)
 ## We looked at general and basic features 
 ## Check if you can:
 
-* Run RStudio on your computer or log in to RStudio Cloud
+* Run RStudio on your computer or log in to RStudio Server
 * Use RStudio Project environment 
 * Create variables and check them from the "Environment" pane or ls()
 * Run R commands on console and directly from the editor window.
@@ -233,7 +233,7 @@ Data Import
 
 Follow the instructor and import "auto.csv" file!
 
-Click-click-click-done!
+Point-and-Click
 
 Check if you have *auto* in your Environment.
 
@@ -317,9 +317,11 @@ head(iris)
 # check the structure of the iris dataset
 str(iris)
 
-# Show mean sepal length for different species
+# Show mean sepal length for each different specie
 aggregate(Sepal.Length ~ Species, data = iris, FUN = mean)
 ```
+
+(Note: an aggregate function is a function outputing one single summary value from the values of grouped multiple observations. For example, sum, mean, count, etc.)
 
 R Formula (A side note)
 ========================================================
@@ -358,8 +360,8 @@ fileurl <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-st
 
 library(readr)
 us_states <- read_csv(fileurl) # you may directly put the URL
-data_covid <- aggregate(  _add the right code here_  )
-new_cases <- diff( _add the right code here_   )
+data_covid <- aggregate(  _add_your_code_here_  )
+new_cases <- diff( _add_your_code_here_   )
 barplot(new_cases)
 ```
 
@@ -377,7 +379,7 @@ To Be Eligible for Participation
 (1) Participate in the workshop.  
 (2) Follow all the hands-on activities.  
 (3) Create an R Notebook containing hands-on exercises.  
-(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - 9/9/2020") as an attachment.
+(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - 2/10/2021") as an attachment.
 
 
 Links and References
