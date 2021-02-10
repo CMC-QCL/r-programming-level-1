@@ -1,7 +1,7 @@
 R Programming for Beginners (Online)
 ========================================================
 author: Jeho Park
-date: October 14, 2020
+date: February 10, 2020
 transition: none
 autosize: true
 css: custom.css
@@ -27,7 +27,7 @@ Recommendations for Engagement:
 
 After you finish this workshop, you will be able to...
 ========================================================
-* Run RStudio on your computer or log in to RStudio Cloud
+* Run RStudio on your computer or log in to RStudio Cloud/RStudio Server
 * Use RStudio Project environment 
 * Create variables and check them from the "Environment" pane or ls()
 * Run R commands on console and directly from the editor window.
@@ -56,7 +56,7 @@ A Quick Start Guide for R Beginners
 
 In this section, you will be guided to learn some very basic information about R and RStudio.
 
-I will then check your R/RStudio (Cloud) environment to make sure that you can use R/RStudio afterwards.
+I will then check your R/RStudio environment to make sure that you can use R/RStudio afterwards.
 
 What is RStudio?
 ========================================================
