@@ -78,7 +78,7 @@ For your R'ing, make sure that you have
 * RStudio Desktop (https://rstudio.com/products/rstudio/download/)
 
 For today's workshop, we will be using 
-* RStudio Cloud at https://rstudio.cloud
+* CMC RStudio Server at https://webapps.cmc.edu/rstudio/
 
 Please log in to your RStudio Cloud account. RStudio Cloud offers the same RStudio Desktop interface and more such as project sharing.
 
