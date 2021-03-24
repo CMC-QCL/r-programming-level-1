@@ -12,9 +12,9 @@ This workshop is designed for beginners in R programming--no prior knowledge of 
 ### Required Software/Account
 _CMC RStudio Server_  
 We will use CMC RStudio Server for this workshop. To access the CMC RStudio Server, please contact qcl@cmc.edu to activate your school account for the RStudio Server. Once your school account is added to the access list, please follow the instrutions below:
-(1)   Open https://webapps.cmc.edu/rstudio/auth-sign-in
-(2)   Use your CMC username (without @cmc.edu or @claremontmckenna.edu)
-(3)   Type your password for the CMC credential
+1.   Open https://webapps.cmc.edu/rstudio/auth-sign-in
+2.   Use your CMC username (without @cmc.edu or @claremontmckenna.edu)
+3.   Type your password for the CMC credential
   
 _Desktop Application_  
 If you are planning to use desktop application, please make sure that you have the latest R (https://cran.r-project.org/) and RStudio Desktop (https://www.rstudio.com/products/rstudio/download/; free version) installed on your computer.
