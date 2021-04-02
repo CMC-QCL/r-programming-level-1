@@ -1,6 +1,6 @@
 R Programming for Beginners (Online)
 ========================================================
-author: Jeho Park
+author: Dr. Jeho Park
 date: April 2, 2021
 transition: none
 autosize: true
@@ -290,6 +290,18 @@ boxplot(auto$mpg ~ auto$cylinders, data = auto, xlab = "Number of Cylinders", yl
 <img src="./r-programming-beginner-online-figure/boxplot.png" title="Data Wrangling" alt="Data Wrangling" width="80%" style="display: block; margin: auto;" />
 Source: https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51
 
+Data Visualization - Correlogram 
+===================
+
+```r
+library(corrplot) # A visualization of a correlation matrix
+library(RColorBrewer)
+M <- cor(mtcars) # Correlation
+corrplot(M, type="upper", order="hclust",
+         col=brewer.pal(n=8, name="RdYlBu"))
+```
+Source: [sthda.com](http://www.sthda.com/english/wiki/correlation-analyses-in-r)
+
 Data Wrangling
 ========================================================
 Data wrangling, sometimes referred to as data munging, is the process of **transforming** and **mapping data** from one "raw" data form into another format with the intent of making it more appropriate and valuable for a variety of downstream purposes such as analytics. 
@@ -335,7 +347,6 @@ boxplot(**auto$mpg ~ auto$cylinders**)
 aggregate(**Sepal.Length ~ Species**, data = iris, FUN = mean)
 
 For example, **y ~ x** is called *fomula* in R where the left-hand side of a tilde (~) is the "dependent variable" and the right-hand side is the "independent variables." In most cases, you read it as y is a function of x. In the aggregate case, you read it as "y is grouped according to x." The FUN argument tells how they are computed. In our example, the Sepal.Length values are averaged using the mean function. 
-
 
 (Stretch) Hands-On! COVID-19 Cases in the U.S.
 ========================================================
