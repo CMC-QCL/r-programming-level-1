@@ -1,6 +1,6 @@
 R Programming for Beginners (Online)
 ========================================================
-author: Jeho Park
+author: Dr. Jeho Park
 date: April 2, 2021
 transition: none
 autosize: true
@@ -110,7 +110,7 @@ modulus = a %% b
 ```
 
 ```{r}
-# comments are preceded by hash sign
+# a comment is preceded by a hash sign
 ```
 
 Workspace
@@ -231,9 +231,9 @@ When you have a large dataset, it's impossible and inconvenient to display the w
 
 Exercise 2:
 
-In this exercise, you will create a Code Chunk in the Notebook doing the following:
-(1) Import "auto.csv" as auto_data
-(2) Output the first row of auto_data using R's built-in function
+In this exercise, you will create a Code Chunk in the Notebook doing the following:  
+(1) Import "auto.csv" as auto_data  
+(2) Output the first row of auto_data using R's built-in function  
 (3) Output the last row of auto_data using R's built-in function
 
 Data Exploration - Summary
@@ -241,16 +241,17 @@ Data Exploration - Summary
 ```{r, eval=FALSE}
 # The summary function shows summary statistics.
 summary(CO2)
-# summary(auto) # try this if you did Exercise 2 above
+summary(auto) # try this if you did Exercise 2 above
 ```
 
-Data Visualization
+Data Exploration - Visualization
 ========================================================
-- Basic plots such as histogram, box plot, and scatter plot are within a few key strokes away (type `boxp` and wait for it)
+- Basic plots such as histogram, box plot, and scatter plot are within a few keystrokes away
+- RStudio suggests the object name for auto-completion (type `boxp` and wait for it)
 
 ```{r, eval=F}
 hist(auto$weight) # Use help function for more plotting options
-boxplot(auto$mpg ~ auto$cylinders)
+boxplot(auto$mpg ~ auto$cylinders) # Guess what will be on the y-axis
 ```
 **Note that we used '$' to extract a variable (i.e., column) of a dataframe
 
@@ -270,6 +271,22 @@ Data Visualization - Boxplot
 ```{r, eval=F}
 boxplot(auto$mpg ~ auto$cylinders, data = auto, xlab = "Number of Cylinders", ylab = "Miles Per Gallon", main = "Mileage Data")
 ```
+
+```{r, out.width='80%', fig.align='center', fig.cap='Data Wrangling', echo = FALSE}
+knitr::include_graphics('./r-programming-beginner-online-figure/boxplot.png')
+```
+Source: https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51
+
+Data Visualization - Correlogram 
+===================
+```{r, eval=F}
+library(corrplot) # A visualization of a correlation matrix
+library(RColorBrewer)
+M <- cor(mtcars) # Correlation
+corrplot(M, type="upper", order="hclust",
+         col=brewer.pal(n=8, name="RdYlBu"))
+```
+Source: [sthda.com](http://www.sthda.com/english/wiki/correlation-analyses-in-r)
 
 Data Wrangling
 ========================================================
@@ -318,7 +335,6 @@ aggregate(**Sepal.Length ~ Species**, data = iris, FUN = mean)
 
 For example, **y ~ x** is called *fomula* in R where the left-hand side of a tilde (~) is the "dependent variable" and the right-hand side is the "independent variables." In most cases, you read it as y is a function of x. In the aggregate case, you read it as "y is grouped according to x." The FUN argument tells how they are computed. In our example, the Sepal.Length values are averaged using the mean function. 
 
-
 (Stretch) Hands-On! COVID-19 Cases in the U.S.
 ========================================================
 Create a barplot showing daily changes in the new COVID-19 cases in the US.
@@ -365,7 +381,7 @@ To Be Eligible for Participation
 (1) Participate in the workshop.  
 (2) Follow all the hands-on activities.  
 (3) Create an R Notebook containing hands-on exercises.  
-(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - 2/10/2021") as an attachment.
+(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - [DATE]") as an attachment.
 
 
 Links and References
