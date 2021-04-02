@@ -243,9 +243,9 @@ When you have a large dataset, it's impossible and inconvenient to display the w
 
 Exercise 2:
 
-In this exercise, you will create a Code Chunk in the Notebook doing the following:
-(1) Import "auto.csv" as auto_data
-(2) Output the first row of auto_data using R's built-in function
+In this exercise, you will create a Code Chunk in the Notebook doing the following:  
+(1) Import "auto.csv" as auto_data  
+(2) Output the first row of auto_data using R's built-in function  
 (3) Output the last row of auto_data using R's built-in function
 
 Data Exploration - Summary
@@ -254,17 +254,18 @@ Data Exploration - Summary
 ```r
 # The summary function shows summary statistics.
 summary(CO2)
-# summary(auto) # try this if you did Exercise 2 above
+summary(auto) # try this if you did Exercise 2 above
 ```
 
-Data Visualization
+Data Exploration - Visualization
 ========================================================
-- Basic plots such as histogram, box plot, and scatter plot are within a few key strokes away (type `boxp` and wait for it)
+- Basic plots such as histogram, box plot, and scatter plot are within a few keystrokes away
+- RStudio suggests the object name for auto-completion (type `boxp` and wait for it)
 
 
 ```r
 hist(auto$weight) # Use help function for more plotting options
-boxplot(auto$mpg ~ auto$cylinders)
+boxplot(auto$mpg ~ auto$cylinders) # Guess what will be on the y-axis
 ```
 **Note that we used '$' to extract a variable (column/feature/etc) of a dataframe
 
@@ -285,6 +286,9 @@ Data Visualization - Boxplot
 ```r
 boxplot(auto$mpg ~ auto$cylinders, data = auto, xlab = "Number of Cylinders", ylab = "Miles Per Gallon", main = "Mileage Data")
 ```
+
+<img src="./r-programming-beginner-online-figure/boxplot.png" title="Data Wrangling" alt="Data Wrangling" width="80%" style="display: block; margin: auto;" />
+Source: https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51
 
 Data Wrangling
 ========================================================
@@ -379,7 +383,7 @@ To Be Eligible for Participation
 (1) Participate in the workshop.  
 (2) Follow all the hands-on activities.  
 (3) Create an R Notebook containing hands-on exercises.  
-(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - 2/10/2021") as an attachment.
+(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - [DATE]") as an attachment.
 
 
 Links and References
