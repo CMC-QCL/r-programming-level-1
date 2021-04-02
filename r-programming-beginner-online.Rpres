@@ -110,7 +110,7 @@ modulus = a %% b
 ```
 
 ```{r}
-# comments are preceded by hash sign
+# a comment is preceded by a hash sign
 ```
 
 Workspace
