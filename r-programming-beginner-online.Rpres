@@ -2,7 +2,7 @@ R Programming for Beginners (Online)
 ========================================================
 author: Jeho Park
 date: April 2, 2021
-transition: rotate
+transition: none
 autosize: true
 css: custom.css
 
