@@ -78,11 +78,10 @@ For your R'ing, make sure that you have
 * RStudio Desktop (https://rstudio.com/products/rstudio/download/)
 
 For today's workshop, we will be using 
-* CMC RStudio Server at https://webapps.cmc.edu/rstudio/
+* RStudio Cloud at https://rstudio.cloud
 
-Please log in to your RStudio Server account. RStudio Server offers the same RStudio Desktop interface and more such as project sharing. 
+Please log in to your RStudio Cloud account. RStudio Cloud offers the same RStudio Desktop interface and more such as project sharing. 
 
-For non-CMC folks, we have provided generic training accounts (e.g., ruser1). These accounts will be available to you for 2 weeks after the workshop.
 
 
 RStudio Project
