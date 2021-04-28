@@ -41,11 +41,11 @@ After you finish this workshop, you will be able to...
 
 Agenda
 ========================================================
-## Part I: R Computing Environment (30 - 40 min)
+## Part I: R Computing Environment (50 - 60 min)
 * Getting Started with R and RStudio
 * R computing environment setup
 
-## Part II: Working with Data (60 - 70 min)
+## Part II: Working with Data (50 - 60 min)
 * Built-in datasets and data import
 * Data exploration and data visualization
 * Hands-on exercise
