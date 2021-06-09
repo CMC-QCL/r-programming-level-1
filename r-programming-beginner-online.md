@@ -22,7 +22,7 @@ If you have to leave in the middle of the workshop, please leave a note on the c
 
 Recommendations for Engagement:  
 (1) Use your camera to show your attention  
-(2) Use gestures such as nodding, thumbs-up, and rasing hand to signal your understanding/misunderstanding  
+(2) Use gestures such as nodding, thumbs-up, and raising hand to signal your understanding/misunderstanding  
 (3) Unmute yourself to ask questions anytime   
 
 After you finish this workshop, you will be able to...
