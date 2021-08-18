@@ -289,18 +289,6 @@ boxplot(auto$mpg ~ auto$cylinders, data = auto, xlab = "Number of Cylinders", yl
 <img src="./r-programming-beginner-online-figure/boxplot.png" title="Data Wrangling" alt="Data Wrangling" width="80%" style="display: block; margin: auto;" />
 Source: https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51
 
-Data Visualization - Correlogram 
-===================
-
-```r
-library(corrplot) # A visualization of a correlation matrix
-library(RColorBrewer)
-M <- cor(mtcars) # Correlation
-corrplot(M, type="upper", order="hclust",
-         col=brewer.pal(n=8, name="RdYlBu"))
-```
-Source: [sthda.com](http://www.sthda.com/english/wiki/correlation-analyses-in-r)
-
 Data Wrangling
 ========================================================
 Data wrangling, sometimes referred to as data munging, is the process of **transforming** and **mapping data** from one "raw" data form into another format with the intent of making it more appropriate and valuable for a variety of downstream purposes such as analytics. 
