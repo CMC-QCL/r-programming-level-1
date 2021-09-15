@@ -1,7 +1,7 @@
 R Programming for Beginners (Online)
 ========================================================
 author: Dr. Jeho Park
-date: August 18, 2021
+date: September 15, 2021
 transition: none
 autosize: true
 css: custom.css
