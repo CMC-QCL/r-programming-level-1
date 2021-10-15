@@ -1,7 +1,7 @@
 R Programming for Beginners (Online)
 ========================================================
 author: Dr. Jeho Park
-date: September 15, 2021
+date: October 15, 2021
 transition: none
 autosize: true
 css: custom.css
@@ -101,12 +101,12 @@ That's right! R is a programming languge.
 a <- 16 # assignment operator! Is it an arrow sign?
 b <- 3
 add <- a + b
-sub = a - b
-mult = a * b
-div = a / b
-int_div = a %/% b
-exponent = a ^ b
-modulus = a %% b
+sub <- a - b
+mult <- a * b
+div <- a / b
+int_div <- a %/% b
+exponent <- a ^ b
+modulus <- a %% b
 ```
 
 
