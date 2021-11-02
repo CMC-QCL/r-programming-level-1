@@ -36,8 +36,7 @@ After you finish this workshop, you will be able to...
 * Use built-in datasets
 * Summarise datasets (exp. Dataframe)
 * Import CSV files from local folder as well as from remote location
-* Plot histogram, boxplot, scatterplot, and barplot
-* Aggregate a variable in a dataframe (or tiblet) by another variable (when time permits)
+* Plot histogram, boxplot, and scatterplot
 
 Agenda
 ========================================================
