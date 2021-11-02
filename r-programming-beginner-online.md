@@ -34,7 +34,7 @@ After you finish this workshop, you will be able to...
 * Create R Notebook and add Code Chunks
 * Install new packages and load required packages
 * Use built-in datasets
-* Summarise datasets (exp. Dataframe)
+* Summarize data frames
 * Import CSV files from local folder as well as from remote location
 * Plot histogram, boxplot, and scatterplot
 
