@@ -7,7 +7,7 @@ autosize: true
 css: custom.css
 
 ## Murty Sunak Quantitative and Computing Lab
-### Online Workshop Series: Level 1 - Coding
+### Workshop Series: Level 1
 
 Some Housekeeping Stuff
 ========================================================
