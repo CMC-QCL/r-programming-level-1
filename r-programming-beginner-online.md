@@ -1,7 +1,7 @@
 R Programming for Beginners (Online)
 ========================================================
 author: Dr. Jeho Park
-date: November 2, 2021
+date: November 12, 2021
 transition: none
 autosize: true
 css: custom.css
@@ -20,10 +20,10 @@ Those of you attending this workshop as part of requirements for your research g
 
 If you have to leave in the middle of the workshop, please leave a note on the chat for the record.
 
-Recommendations for Engagement:  
+Recommendations for Engagement for Remote Participants:
 (1) Use your camera to show your attention  
 (2) Use gestures such as nodding, thumbs-up, and raising hand to signal your understanding/misunderstanding  
-(3) Unmute yourself to ask questions anytime   
+(3) Type your questions in the chat 
 
 After you finish this workshop, you will be able to...
 ========================================================
