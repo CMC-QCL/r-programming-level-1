@@ -194,7 +194,7 @@ End of Part I (break check area)
 ## We looked at general and basic features 
 ## Check if you can:
 
-* Run RStudio on your computer or log in to RStudio Server
+* Run RStudio on your computer or log in to RStudio Server (or RStudio Cloud)
 * Use RStudio Project environment 
 * Create variables and check them from the "Environment" pane or ls()
 * Run R commands on console and directly from the editor window.
