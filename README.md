@@ -1,4 +1,7 @@
-### Workshop Syllabus
+
+[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
+
+# Workshop Syllabus
 #### QCL Literacy: L1-Coding
 
 Instructor: Jeho Park, Director of the Quantitative and Computing Lab at Claremont McKenna College
@@ -35,4 +38,3 @@ _Prerequisite: R and RStudio_
 1. (From the RStudio Files tab) click on r-programming-beginner.Pres
 1. Run R commands line by line by (1) click on the line you want to run and then (2) press the Ctrl+Enter key
 
-[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
