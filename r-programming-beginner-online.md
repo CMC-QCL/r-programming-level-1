@@ -330,7 +330,7 @@ Links and References
 > - The R-Bootcamp by Jared Knowles: http://jaredknowles.com/r-bootcamp/,
 > - Advanced R by Hadley Wickham: http://adv-r.had.co.nz**
 > - RStudio Cloud Primers: https://rstudio.cloud/learn/primers
-> - R Tutorials
+> - R Tutorial
 https://datacarpentry.org/R-genomics/index.html
 
 
