@@ -150,6 +150,17 @@ QCL R Workshop - [Your Name] - [Date]
 Some Gene-R-al Stuff
 ========================================================
 
+
+```r
+?hist # search for the usage of hist function
+```
+
+
+```r
+??histogram # search for package documents containing the word "histogram"
+```
+
+
 ```r
 demo() # display available demos
 ```
@@ -164,15 +175,6 @@ library() # show available packages on the computer
 
 ```r
 search() # show loaded packages
-```
-
-```r
-?hist # search for the usage of hist function
-```
-
-
-```r
-??histogram # search for package documents containing the word "histogram"
 ```
 
 R Packages
@@ -328,4 +330,7 @@ Links and References
 > - The R-Bootcamp by Jared Knowles: http://jaredknowles.com/r-bootcamp/,
 > - Advanced R by Hadley Wickham: http://adv-r.had.co.nz**
 > - RStudio Cloud Primers: https://rstudio.cloud/learn/primers
+> - R Tutorials
+https://datacarpentry.org/R-genomics/index.html
+
 

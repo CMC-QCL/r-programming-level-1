@@ -146,17 +146,6 @@ QCL R Workshop - [Your Name] - [Date]
 
 Some Gene-R-al Stuff
 ========================================================
-```{r, eval=FALSE}
-demo() # display available demos
-
-```{r, eval=FALSE}
-demo(graphics) # try graphics demo
-
-```{r, eval=FALSE}
-library() # show available packages on the computer
-
-```{r, eval=FALSE}
-search() # show loaded packages
 
 ```{r, eval=FALSE}
 ?hist # search for the usage of hist function
@@ -164,6 +153,19 @@ search() # show loaded packages
 
 ```{r, eval=FALSE}
 ??histogram # search for package documents containing the word "histogram"
+```
+
+```{r, eval=FALSE}
+demo() # display available demos
+```
+```{r, eval=FALSE}
+demo(graphics) # try graphics demo
+```
+```{r, eval=FALSE}
+library() # show available packages on the computer
+```
+```{r, eval=FALSE}
+search() # show loaded packages
 ```
 
 R Packages
@@ -317,4 +319,7 @@ Links and References
 > - The R-Bootcamp by Jared Knowles: http://jaredknowles.com/r-bootcamp/,
 > - Advanced R by Hadley Wickham: http://adv-r.had.co.nz**
 > - RStudio Cloud Primers: https://rstudio.cloud/learn/primers
+> - R Tutorials
+https://datacarpentry.org/R-genomics/index.html
+
 
