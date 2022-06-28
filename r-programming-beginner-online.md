@@ -21,9 +21,9 @@ Those of you attending this workshop as part of requirements for your research g
 If you have to leave in the middle of the workshop, please leave a note on the chat for the record.
 
 Recommendations for Engagement for Remote Participants:  
-(1) Use your camera to show your attention  
-(2) Use gestures such as nodding, thumbs-up, and raising hand to signal your understanding/misunderstanding  
-(3) Type your questions in the chat 
+(1) Use your camera to show your attention,  
+(2) Use gestures such as nodding, thumbs-up, and raising hand to signal you understanding/misunderstanding,  
+(3) Type your questions in the chat or simply raise your virtual hand.
 
 After you finish this workshop, you will be able to...
 ========================================================
