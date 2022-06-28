@@ -13,8 +13,11 @@ R is an open source statistical programming language. R is widely used in indust
 This workshop is designed for beginners in R programming--no prior knowledge of R programming is needed. General programming knowledge in any programming languages will help understand the programming concepts and hands-on part.   
 
 ### Required Software/Account
+_RStudio Cloud_ 
+RStudio offers free tier cloud environment which provides similar interface with RStudio Desktop. If you don't have one yet, please create a new account at http://rstudio.cloud. 
+ 
 _CMC RStudio Server_  
-We will use CMC RStudio Server for this workshop. To access the CMC RStudio Server, please contact qcl@cmc.edu to activate your school account for the RStudio Server. Once your school account is added to the access list, please follow the instrutions below:
+To access the CMC RStudio Server, please contact qcl@cmc.edu to activate your school account for the RStudio Server. Once your school account is added to the access list, please follow the instructions below:
 1.   Open https://webapps.cmc.edu/rstudio/auth-sign-in
 2.   Use your CMC username (without @cmc.edu or @claremontmckenna.edu)
 3.   Type your password for the CMC credential
