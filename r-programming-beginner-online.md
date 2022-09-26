@@ -10,8 +10,7 @@ css: custom.css
 
 Some Housekeeping Stuff
 ========================================================
-- **Files** at https://bit.ly/r-workshop-beginner-online
-- **GitHub Repo** at https://github.com/CMC-QCL/r-programming-beginner-online.git 
+- **Workshop GitHub Repo** at https://github.com/CMC-QCL/r-programming-level-1.git 
 
 QCL Workshop Participation Requirements: 
 ========================================================
