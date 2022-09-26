@@ -18,10 +18,8 @@ Those of you attending this workshop as part of requirements for your research g
 
 If you have to leave in the middle of the workshop, please leave a note on the chat for the record.
 
-Recommendations for Engagement for Remote Participants:  
-(1) Use your camera to show your attention,  
-(2) Use gestures such as nodding, thumbs-up, and raising hand to signal you understanding/misunderstanding,  
-(3) Type your questions in the chat or simply raise your virtual hand.
+(Possible) Digital Badge Requirement: all hands-on exercise to be submitted to qcl@cmc.edu with its subject being  
+__"QCL Workshop Hands-On - [YOUR_NAME] on [DATE]"__
 
 After you finish this workshop, you will be able to...
 ========================================================
@@ -109,15 +107,6 @@ modulus <- a %% b
 # a comment is preceded by a hash sign
 ```
 
-Workspace
-========================================================
-
-R workspace stores objects like vectors, datasets and functions in memory (the available space for calculation is limited to the size of the RAM).
-
-```{r, eval=FALSE}
-ls()
-```
-
 [Hands-On] Now it's your turn
 ========================================================
 
@@ -138,7 +127,7 @@ After finishing all the workshop exercises (Part I and Part II) on the R Markdow
 qcl@cmc.edu
 
 Email Subject Line should be:  
-QCL R Workshop - [Your Name] - [Date] 
+QCL Workshop Hands-On - [Your Name] on [Date] 
 
 
 
@@ -301,7 +290,7 @@ To Be Eligible for Participation
 (1) Participate in the workshop.  
 (2) Follow all the hands-on activities.  
 (3) Create an R Notebook containing hands-on exercises.  
-(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL R Workshop - [Your Name] - [DATE]") as an attachment.
+(4) Send the R Notebook file to qcl@cmc.edu (subject line: "QCL Workshop Hands-On - [Your Name] on [DATE]") as an attachment.
 
 
 Links and References
