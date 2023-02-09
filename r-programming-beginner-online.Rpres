@@ -206,11 +206,11 @@ Data Import
 ========================================================
 ## Data file import is very easy with RStudio
 
-Follow the instructor and import "auto.csv" file!
+Follow the instructor and import "Births2015.csv" file!
 
 Point-and-Click
 
-Check if you have *auto* in your Environment.
+Check if you have *births2015* in your Environment.
 
 Hands-On: Data Exploration - Head or Tail?
 ========================================================
