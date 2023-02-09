@@ -73,9 +73,9 @@ For your R'ing, make sure that you have
 * RStudio Desktop (https://rstudio.com/products/rstudio/download/)
 
 For today's workshop, we will be using 
-* RStudio Cloud at https://rstudio.cloud
+* RStudio Cloud ==> Posit Cloud at https://posit.cloud
 
-Please log in to your RStudio Cloud account. RStudio Cloud offers the same RStudio Desktop interface and more such as project sharing. 
+Please log in to your Posit Cloud account. Posit Cloud offers the same RStudio Desktop interface and more such as project sharing. 
 
 
 
@@ -120,7 +120,7 @@ Let's create a R Notebook and start the hands-on exercise in the Notebook docume
 
 Exercise 1:
 
-Create a variable x containing pi times pi, and another variable y containing a square root of x. Show the values as an output.
+Create a variable _x_ containing _pi_ times _pi_, and another variable _y_ containing a square root of _x_. Show the values as an output.
 
 Homework
 ========================================================
