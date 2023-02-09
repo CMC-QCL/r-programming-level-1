@@ -219,9 +219,9 @@ When you have a large dataset, it's impossible and inconvenient to display the w
 Exercise 2:
 
 In this exercise, you will create a Code Chunk in the Notebook doing the following:  
-(1) Import "auto.csv" as auto_data  
-(2) Output the first row of auto_data using R's built-in function  
-(3) Output the last row of auto_data using R's built-in function
+(1) Import "auto.csv" as *auto*  
+(2) Output the first row of *auto* using R's built-in function  
+(3) Output the last row of *auto* using R's built-in function
 
 Data Exploration - Summary
 ========================================================
