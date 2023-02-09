@@ -249,7 +249,7 @@ Hands-On: Data Visualization - Scatter Plot
 Scatter plot is a very useful tool when you want to visualize a relationship between two variables. 
 
 Exercise 3:
-In this exercise, you want to create a scatter plot showing mpg on X axis and horsepower on Y-axis to see the relationship between the two variables.
+In this exercise, you want to create a scatter plot showing mpg on X-axis (horizontal axis) and horsepower on Y-axis (vertical axis) to see the relationship between the two variables.
 
 In addition, change X label to "Miles per Gallon" and Y label to "Horsepower" and add a title "Horsepower vs. MPG" 
 
